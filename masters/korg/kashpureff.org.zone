@@ -1,8 +1,12 @@
-; kashpureff.org
+;
+; masters/korg/kashpureff.org.zone
+; EugeneKay/dns
+;
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1416792783	1H	5M	1W	1H	)
+
 ;;
 ;; Nameservers
 ;;
@@ -80,6 +84,7 @@ _ldap._tcp		NS	ns3.linode.com.
 _ldap._tcp		NS	ns4.linode.com.
 _ldap._tcp		NS	ns5.linode.com.
 
+
 ;;
 ;; Services
 ;;
@@ -107,7 +112,7 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 @			TXT	"v=spf1 include:_spf.google.com ~all"
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
 
-; XMPP/Jabber
+;; XMPP/Jabber
 _xmpp-client._tcp	SRV	10	10	5222	xmpp.l.google.com.
 _xmpp-client._tcp	SRV	20	10	5222	alt1.xmpp.l.google.com.
 _xmpp-client._tcp	SRV	20	10	5222	alt2.xmpp.l.google.com.
@@ -146,11 +151,9 @@ drive			CNAME	www
 mail			CNAME	www
 contacts		CNAME	www
 
-; Subsonic
-subsonic		CNAME	he
-
 ; Nagios
 nagios			CNAME	jeeves
+
 
 ;;
 ;; Hosts
