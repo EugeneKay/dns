@@ -1,0 +1,82 @@
+; Necrolounge.org
+$ORIGIN necrolounge.org.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1416792196	1H	5M	1W	1H	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.linode.com.
+_dns._udp		SRV	10	10	53	ns5.linode.com.
+
+;; Games
+games			CNAME	jeeves.kashpureff.org.
+minecraft		CNAME	jeeves.kashpureff.org.
+ipv4-minecraft		CNAME	ipv4-jeeves.kashpureff.org.
+ipv6-minecraft		CNAME	ipv6-jeeves.kashpureff.org.
+_http._tcp.games	SRV	10	10	8	jeeves.kashpureff.org.
+_https._tcp.games	SRV	10	10	443	jeeves.kashpureff.org.
+_mc._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
+_minecraft._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
+_mc._tcp.games		SRV	10	10	25565	jeeves.kashpureff.org.
+_minecraft._tcp.games	SRV	10	10	25565	jeeves.kashpureff.org.
+tf2			CNAME	cahillmanley.com.
+
+;; Mail
+@			MX	10	jeeves.kashpureff.org.
+@			TXT	"v=spf1 +a:jeeves.kashpureff.org -all"
+@			SPF	"v=spf1 +a:jeeves.kashpureff.org -all"
+_smtps._tcp		SRV	10	10	465	jeeves.kashpureff.org.
+_submission._tcp	SRV	10	10	587	jeeves.kashpureff.org.
+_imap._tcp		SRV	10	10	143	jeeves.kashpureff.org.
+_imaps._tcp		SRV	10	10	993	jeeves.kashpureff.org.
+
+;; Web
+@			A	198.27.67.75
+@			AAAA	2607:5300:60:1c4b::3:10
+ipv4			A	198.27.67.75
+ipv6			AAAA	2607:5300:60:1c4b::3:10
+www			A	198.27.67.75
+www			AAAA	2607:5300:60:1c4b::3:10
+ipv4-www		A	198.27.67.75
+ipv6-www		AAAA	2607:5300:60:1c4b::3:10
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
+
+;;
+;; Hosts
+;;
+
+;; Gaga
+gaga			A	184.105.79.31
+gaga			AAAA	2001:470:58:2::29:1
+gaga			AAAA	2001:470:58:2::29:ffff
+ipv4-gaga		A	184.105.79.31
+ipv6-gaga		AAAA	2001:470:58:2::29:1
+ipv6-gaga		AAAA	2001:470:58:2::29:ffff
+;gaga			SSHFP	
+;gaga			SSHFP	
+_ssh._tcp.gaga		SRV	10	10	22	gaga

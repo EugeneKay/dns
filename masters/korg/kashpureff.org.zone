@@ -1,0 +1,227 @@
+; kashpureff.org
+$ORIGIN kashpureff.org.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1416792196	1H	5M	1W	1H	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;; Delegations
+
+; Washington
+wa			NS	ns1.linode.com.
+wa			NS	ns2.linode.com.
+wa			NS	ns3.linode.com.
+wa			NS	ns4.linode.com.
+wa			NS	ns5.linode.com.
+
+; Active Directory
+DomainDnsZones		NS	ns1.linode.com.
+DomainDnsZones		NS	ns2.linode.com.
+DomainDnsZones		NS	ns3.linode.com.
+DomainDnsZones		NS	ns4.linode.com.
+DomainDnsZones		NS	ns5.linode.com.
+ForestDnsZones		NS	ns1.linode.com.
+ForestDnsZones		NS	ns2.linode.com.
+ForestDnsZones		NS	ns3.linode.com.
+ForestDnsZones		NS	ns4.linode.com.
+ForestDnsZones		NS	ns5.linode.com.
+win			NS	ns1.linode.com.
+win			NS	ns2.linode.com.
+win			NS	ns3.linode.com.
+win			NS	ns4.linode.com.
+win			NS	ns5.linode.com.
+_msdcs			NS	ns1.linode.com.
+_msdcs			NS	ns2.linode.com.
+_msdcs			NS	ns3.linode.com.
+_msdcs			NS	ns4.linode.com.
+_msdcs			NS	ns5.linode.com.
+_sites			NS	ns1.linode.com.
+_sites			NS	ns2.linode.com.
+_sites			NS	ns3.linode.com.
+_sites			NS	ns4.linode.com.
+_sites			NS	ns5.linode.com.
+_gc._tcp		NS	ns1.linode.com.
+_gc._tcp		NS	ns2.linode.com.
+_gc._tcp		NS	ns3.linode.com.
+_gc._tcp		NS	ns4.linode.com.
+_gc._tcp		NS	ns5.linode.com.
+_kerberos._tcp		NS	ns1.linode.com.
+_kerberos._tcp		NS	ns2.linode.com.
+_kerberos._tcp		NS	ns3.linode.com.
+_kerberos._tcp		NS	ns4.linode.com.
+_kerberos._tcp		NS	ns5.linode.com.
+_kerberos._udp		NS	ns1.linode.com.
+_kerberos._udp		NS	ns2.linode.com.
+_kerberos._udp		NS	ns3.linode.com.
+_kerberos._udp		NS	ns4.linode.com.
+_kerberos._udp		NS	ns5.linode.com.
+_kpasswd._tcp		NS	ns1.linode.com.
+_kpasswd._tcp		NS	ns2.linode.com.
+_kpasswd._tcp		NS	ns3.linode.com.
+_kpasswd._tcp		NS	ns4.linode.com.
+_kpasswd._tcp		NS	ns5.linode.com.
+_kpasswd._udp		NS	ns1.linode.com.
+_kpasswd._udp		NS	ns2.linode.com.
+_kpasswd._udp		NS	ns3.linode.com.
+_kpasswd._udp		NS	ns4.linode.com.
+_kpasswd._udp		NS	ns5.linode.com.
+_ldap._tcp		NS	ns1.linode.com.
+_ldap._tcp		NS	ns2.linode.com.
+_ldap._tcp		NS	ns3.linode.com.
+_ldap._tcp		NS	ns4.linode.com.
+_ldap._tcp		NS	ns5.linode.com.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.linode.com.
+_dns._udp		SRV	10	10	53	ns5.linode.com.
+
+;; Mail
+@			MX	10 aspmx.l.google.com.
+@			MX	20 alt1.aspmx.l.google.com.
+@			MX	20 alt2.aspmx.l.google.com.
+@			MX	30 aspmx2.googlemail.com.
+@			MX	30 aspmx3.googlemail.com.
+@			MX	30 aspmx4.googlemail.com.
+@			MX	30 aspmx5.googlemail.com.
+@			TXT	"v=spf1 include:_spf.google.com ~all"
+google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
+
+; XMPP/Jabber
+_xmpp-client._tcp	SRV	10	10	5222	xmpp.l.google.com.
+_xmpp-client._tcp	SRV	20	10	5222	alt1.xmpp.l.google.com.
+_xmpp-client._tcp	SRV	20	10	5222	alt2.xmpp.l.google.com.
+_xmpp-client._tcp	SRV	20	10	5222	alt3.xmpp.l.google.com.
+_xmpp-client._tcp	SRV	20	10	5222	alt4.xmpp.l.google.com.
+_xmpp-server._tcp	SRV	10	10	5269	xmpp-server.l.google.com.
+_xmpp-server._tcp	SRV	20	10	5269	xmpp-server1.l.google.com.
+_xmpp-server._tcp	SRV	20	10	5269	xmpp-server2.l.google.com.
+_xmpp-server._tcp	SRV	20	10	5269	xmpp-server3.l.google.com.
+_xmpp-server._tcp	SRV	20	10	5269	xmpp-server4.l.google.com.
+_jabber._tcp		SRV	10	10	5269	xmpp-server.l.google.com.
+_jabber._tcp		SRV	20	10	5269	xmpp-server1.l.google.com.
+_jabber._tcp		SRV	20	10	5269	xmpp-server2.l.google.com.
+_jabber._tcp		SRV	20	10	5269	xmpp-server3.l.google.com.
+_jabber._tcp		SRV	20	10	5269	xmpp-server4.l.google.com.
+
+;; Web
+@			A	66.175.220.207
+@			AAAA	2600:3c01::3f:103
+ipv4			A	66.175.220.207
+ipv6			AAAA	2600:3c01::3f:103
+www			A	66.175.220.207
+www			AAAA	2600:3c01::3f:103
+ipv4-www		A	66.175.220.207
+ipv6-www		AAAA	2600:3c01::3f:103
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
+
+; Redirected services
+cal			CNAME	www
+calendar		CNAME	www
+docs			CNAME	www
+drive			CNAME	www
+mail			CNAME	www
+contacts		CNAME	www
+
+; Subsonic
+subsonic		CNAME	he
+
+; Nagios
+nagios			CNAME	jeeves
+
+;;
+;; Hosts
+;;
+
+;; Dogprint
+dogprint		A	198.19.17.2
+ipv4.dogprint		A	198.19.17.2
+
+;; Elwha
+elwha			A	198.19.20.1
+ipv4.elwha		A	198.19.20.1
+_ssh._tcp.elwha		SRV	10	10	22	elwha
+
+;; Francis Drake
+
+;; Jack
+jack			A	66.175.220.207
+jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+ipv4.jack		A	66.175.220.207
+ipv6.jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+linode.jack		A	192.168.131.149
+_ssh._tcp.jack		SRV	10	10	22	jack
+
+;; Jeeves
+jeeves			A	173.230.156.35
+jeeves			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
+ipv4.jeeves		A	173.230.156.35
+ipv6.jeeves		AAAA	2600:3c01::f03c:91ff:fe50:ebf0
+linode.jeeves		A	192.168.133.207
+_ssh._tcp.jeeves	SRV	10	10	22	jeeves
+
+;; Jennifer
+jennifer		TXT	"SoYouStart"
+jennifer		A	198.27.81.174
+ipv4.jennifer		A	198.27.81.174
+vpn.jennifer		A	198.19.0.3
+
+;; John
+john			A	198.19.6.20
+ipv4.john		A	198.19.6.20
+_rdp._tcp.john		SRV	10	10	3389	john
+
+;; Kitsap
+kitsap			A	10.13.0.80
+ipv4.kitsap		A	10.13.0.80
+_ssh._tcp.kitsap	SRV	10	10	22	kitsap
+
+;; Robert
+robert			A	198.19.6.10
+ipv4.robert		A	198.19.6.10
+_rdp._tcp.robert	SRV	10	10	3389	robert
+
+;; Sealth
+sealth			A	198.19.21.0
+ipv4.sealth		A	198.19.21.0
+_rdp._tcp.sealth	SRV	10	10	3389	sealth
+
+;; Spokane
+spokane			A	198.19.21.1
+ipv4.spokane		A	198.19.21.1
+_ssh._tcp.spokane	SRV	10	10	22	spokane
+
+;; Tokitae
+tokitae			A	198.19.20.10
+ipv4.tokitae		A	198.19.20.10
+_rdp._tcp.tokitae	SRV	10	10	22	tokitae
+
+;; Wenatchee
+wenatchee		A	198.19.20.20
+ipv4.wenatchee		A	198.19.20.20
+_ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
+
+;; Woodes Rogers

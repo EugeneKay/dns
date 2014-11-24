@@ -1,0 +1,128 @@
+; itvends.com
+$ORIGIN itvends.com.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1416792196	1H	5M	1W	1H	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.linode.com.
+_dns._udp		SRV	10	10	53	ns5.linode.com.
+
+;; Games
+_http._tcp.games	SRV	10	10	80	jeeves.kashpureff.org.
+_https._tcp.games	SRV	10	10	80	jeeves.kashpureff.org.
+_mc._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
+_minecraft._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
+_mc._tcp.games		SRV	10	10	25565	jeeves.kashpureff.org.
+_minecraft._tcp.games	SRV	10	10	25565	jeeves.kashpureff.org.
+
+;; Mail
+@			MX	10	jeeves.kashpureff.org.
+@			TXT	"v=spf1 +a:jeeves.kashpureff.org -all"
+@			SPF	"v=spf1 +a:jeeves.kashpureff.org -all"
+_smtps._tcp		SRV	10	10	465	jeeves.kashpureff.org.
+_submission._tcp	SRV	10	10	587	jeeves.kashpureff.org.
+_imap._tcp		SRV	10	10	143	jeeves.kashpureff.org.
+_imaps._tcp		SRV	10	10	993	jeeves.kashpureff.org.
+
+;; Web
+@			A	66.175.220.207
+@			AAAA	2600:3c01::3f:103
+ipv4			A	66.175.220.207
+ipv6			AAAA	2600:3c01::3f:103
+www			A	66.175.220.207
+www			AAAA	2600:3c01::3f:103
+ipv4-www		A	66.175.220.207
+ipv6-www		AAAA	2600:3c01::3f:103
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	80	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	80	www
+
+; Google Apps
+; Jack
+gapps			A	66.175.220.207
+gapps			AAAA	2600:3c01::3f:103
+jack.gapps		A	66.175.220.207
+jack.gapps		AAAA	2600:3c01::3f:103
+; Jennifer
+gapps			A	198.27.81.174
+gapps			AAAA	2607:5300:60:22ae::0
+jennifer.gapps		A	198.27.81.174
+jennifer.gapps		AAAA	2607:5300:60:22ae::0
+; lakridserne
+;gapps			A	85.159.213.120
+;gapps			AAAA	2a01:7e00::f03c:91ff:fe73:cea0
+lakridserne.gapps	A	85.159.213.120
+lakridserne.gapps	AAAA	2a01:7e00::f03c:91ff:fe73:cea0
+; Moo
+gapps			A	204.77.2.45
+gapps			AAAA	2001:470:f1f6::45:1
+moo.gapps		A	204.77.2.45
+moo.gapps		AAAA	2001:470:f1f6::45:1
+; neersighted
+gapps			A	69.164.204.41
+gapps			AAAA	2600:3c00::f03c:91ff:fe73:bbd8
+neersighted.gapps	A	69.164.204.41
+neersighted.gapps	AAAA	2600:3c00::f03c:91ff:fe73:bbd8
+; sandeep
+gapps			A	104.200.21.20
+gapps			AAAA	2600:3c00::f03c:91ff:fe73:4aa
+sandeep.gapps		A	104.200.21.20
+sandeep.gapps		AAAA	2600:3c00::f03c:91ff:fe73:4aa
+; staticsafe
+gapps			A	23.92.21.10
+gapps			AAAA	2600:3c03:e000:8c::3eb0:15
+staticsafe.gapps	A	23.92.21.10
+staticsafe.gapps	AAAA	2600:3c03:e000:8c::3eb0:15
+; zifnab
+gapps			A	192.99.197.16
+gapps			AAAA	2607:5300:60:64ef::1
+zifnab.gapps		A	192.99.197.16
+zifnab.gapps		AAAA	2607:5300:60:64ef::1
+
+;; ZNC
+znc			A	198.27.67.75
+znc			AAAA	2607:5300:60:1c4b::3:2
+ipv4-znc		A	198.27.67.75
+ipv6-znc		AAAA	2607:5300:60:1c4b::3:2
+_http._tcp.znc		SRV	10	10	80	znc
+_https._tcp.znc		SRV	10	10	80	znc
+_irc._tcp		SRV	10	10	6667	znc
+_irc._tcp		SRV	20	10	56667	znc
+_ircs._tcp		SRV	10	10	6697	znc
+_ircs._tcp		SRV	20	10	56697	znc
+_znc._tcp		SRV	10	10	6667	znc
+_znc._tcp		SRV	20	10	56667	znc
+_zncs._tcp		SRV	10	10	6697	znc
+_zncs._tcp		SRV	20	10	56697	znc
+_irc._tcp.znc		SRV	10	10	6667	znc
+_irc._tcp.znc		SRV	20	10	56667	znc
+_ircs._tcp.znc		SRV	10	10	6697	znc
+_ircs._tcp.znc		SRV	20	10	56697	znc
+_znc._tcp.znc		SRV	10	10	6667	znc
+_znc._tcp.znc		SRV	20	10	56667	znc
+_zncs._tcp.znc		SRV	10	10	6697	znc
+_zncs._tcp.znc		SRV	20	10	56697	znc
