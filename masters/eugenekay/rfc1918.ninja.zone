@@ -1,18 +1,28 @@
-; rfc1918.ninja
-$ORIGIN rfc1918.ninja.
-$TTL 1H
-@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1415434863	1H	5M	1W	1H	)
+;
+; masters/eugenekay/rfc1918.ninja.zone
+; EugeneKay/dns
+;
+
 ;;
-;; Nameservers
+;; Zone Info
 ;;
 
-;; Authoritative
+;; Settings
+$ORIGIN rfc1918.ninja.
+$TTL 1H
+
+;; Start-of-Authority
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1416792989	1H	5M	1W	1H	)
+
+;; Nameservers
+; Authoritative
 @			NS	ns1.linode.com.
 @			NS	ns2.linode.com.
 @			NS	ns3.linode.com.
 @			NS	ns4.linode.com.
 @			NS	ns5.linode.com.
+
 
 ;;
 ;; Services
@@ -40,16 +50,15 @@ _imap._tcp              SRV     10      10      143     jeeves.kashpureff.org.
 _imaps._tcp             SRV     10      10      993     jeeves.kashpureff.org.
 
 ;; Web
-@			A	198.27.67.75
-@			AAAA	2607:5300:60:1c4b::3:18
-ipv4			A	198.27.67.75
-ipv6			AAAA	2607:5300:60:1c4b::3:18
-www			A	198.27.67.75
-www			AAAA	2607:5300:60:1c4b::3:18
-ipv4-www		A	198.27.67.75
-ipv6-www		AAAA	2607:5300:60:1c4b::3:18
+@			A	66.175.220.207
+@			AAAA	2600:3c01::3f:101
+ipv4			A	66.175.220.207
+ipv6			AAAA	2600:3c01::3f:101
+www			A	66.175.220.207
+www			AAAA	2600:3c01::3f:101
+ipv4-www		A	66.175.220.207
+ipv6-www		AAAA	2600:3c01::3f:101
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
-
