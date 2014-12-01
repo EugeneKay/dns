@@ -1,0 +1,10 @@
+$ORIGIN 16.19.198.in-addr.arpa.
+$TTL 300
+@	IN	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
+	4	3600	300	86400	300	)
+@	NS	elwha.kashpureff.org.
+0	PTR	network-public.wa.kashpureff.org.
+1	PTR	elwha.wa.kashpureff.org.
+2	PTR	wifi-netgear.wa.kashpureff.org.
+3	PTR	wifi-dogfort.wa.kashpureff.org.
+10	PTR	sealth-public.wa.kashpureff.org.

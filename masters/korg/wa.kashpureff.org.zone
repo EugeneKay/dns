@@ -1,0 +1,87 @@
+;
+; masters/wa.kashpureff.org.zone
+; eugenekay/dns
+;
+; Domain: wa.kashpureff.org
+
+;;
+;; Zone information
+;;
+
+$TTL 1H
+@	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
+	1414905484	1H	5M	1W	1H	)
+
+
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;; Delegations
+dhcp			NS	ns1.linode.com.
+dhcp			NS	ns2.linode.com.
+dhcp			NS	ns3.linode.com.
+dhcp			NS	ns4.linode.com.
+dhcp			NS	ns5.linode.com.
+
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.linode.com.
+_dns._udp		SRV	10	10	53	ns5.linode.com.
+
+;; Network
+;
+network			CNAME	network-public
+; Public
+network-public		A	198.19.16.0
+network-public		TXT	"198.19.16.0/22"
+broadcast-public	A	198.19.19.255
+; Private
+network-private		A	198.19.20.0
+network-private		TXT	"198.19.20.0/22"
+broadcast-private	A	198.19.23.255
+
+;;
+;; Hosts
+;;
+
+;; Dogcast
+dogcast			A	198.19.17.3
+
+;; Dogprint
+dogprint		A	198.19.17.2
+
+;; Elwha
+elwha			A	198.19.20.1
+elwha-private		A	198.19.20.1
+elwha-public		A	198.19.16.1
+
+;; Sealth
+sealth			A	198.19.21.0
+sealth-private		A	198.19.21.0
+sealth-public		A	198.19.16.10
+
+
+;; WiFI APs
+wifi-netgear		A	198.19.16.2
+wifi-dogfort		A	198.19.16.3
+
