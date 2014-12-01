@@ -1,0 +1,23 @@
+;
+; masters/korg/198.19.6.zone
+; EugeneKay/dns
+;
+$ORIGIN 6.19.198.in-addr.arpa.
+$TTL 300
+@	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1	3600	300	86400	300	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@	NS	jeeves.kashpureff.org.
+@	NS	jennifer.kashpureff.org.
+@	NS	elwha.kashpureff.org.
+
+
+;;
+;; Records
+;;
+0	PTR	network.jennifer-kvm.vpn.kashpureff.org.
+
