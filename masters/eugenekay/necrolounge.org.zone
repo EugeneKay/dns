@@ -2,7 +2,7 @@
 $ORIGIN necrolounge.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1417401159	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -31,16 +31,16 @@ _dns._udp		SRV	10	10	53	ns4.linode.com.
 _dns._udp		SRV	10	10	53	ns5.linode.com.
 
 ;; Games
-games			CNAME	jeeves.kashpureff.org.
-minecraft		CNAME	jeeves.kashpureff.org.
-ipv4-minecraft		CNAME	ipv4-jeeves.kashpureff.org.
-ipv6-minecraft		CNAME	ipv6-jeeves.kashpureff.org.
-_http._tcp.games	SRV	10	10	8	jeeves.kashpureff.org.
-_https._tcp.games	SRV	10	10	443	jeeves.kashpureff.org.
-_mc._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
-_minecraft._tcp		SRV	10	10	25565	jeeves.kashpureff.org.
-_mc._tcp.games		SRV	10	10	25565	jeeves.kashpureff.org.
-_minecraft._tcp.games	SRV	10	10	25565	jeeves.kashpureff.org.
+games			CNAME	jack.kashpureff.org.
+minecraft		CNAME	jack.kashpureff.org.
+ipv4-minecraft		CNAME	ipv4-jack.kashpureff.org.
+ipv6-minecraft		CNAME	ipv6-jack.kashpureff.org.
+_http._tcp.games	SRV	10	10	8	jack.kashpureff.org.
+_https._tcp.games	SRV	10	10	443	jack.kashpureff.org.
+_mc._tcp		SRV	10	10	25565	jack.kashpureff.org.
+_minecraft._tcp		SRV	10	10	25565	jack.kashpureff.org.
+_mc._tcp.games		SRV	10	10	25565	jack.kashpureff.org.
+_minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 tf2			CNAME	cahillmanley.com.
 
 ;; Mail
