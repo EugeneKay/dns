@@ -20,4 +20,6 @@ $TTL 300
 ;; Records
 ;;
 0	PTR	network.jennifer-kvm.vpn.kashpureff.org.
+10	PTR	robert.kashpureff.org.
+20	PTR	john.kashpureff.org.
 
