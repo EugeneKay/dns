@@ -2,7 +2,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1417401159	1H	5M	1W	1H	)
+	1417553196	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -104,10 +104,10 @@ zifnab.gapps		A	192.99.197.16
 zifnab.gapps		AAAA	2607:5300:60:64ef::1
 
 ;; ZNC
-znc			A	198.27.67.75
-znc			AAAA	2607:5300:60:1c4b::3:2
-ipv4-znc		A	198.27.67.75
-ipv6-znc		AAAA	2607:5300:60:1c4b::3:2
+znc			A	66.175.220.207
+znc			AAAA	2600:3c01::3f:103
+ipv4-znc		A	66.175.220.207
+ipv6-znc		AAAA	2600:3c01::3f:103
 _http._tcp.znc		SRV	10	10	80	znc
 _https._tcp.znc		SRV	10	10	80	znc
 _irc._tcp		SRV	10	10	6667	znc
