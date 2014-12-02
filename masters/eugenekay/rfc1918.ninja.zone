@@ -13,7 +13,7 @@ $TTL 1H
 
 ;; Start-of-Authority
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792989	1H	5M	1W	1H	)
+	1417554676	1H	5M	1W	1H	)
 
 ;; Nameservers
 ; Authoritative
@@ -51,13 +51,13 @@ _imaps._tcp             SRV     10      10      993     jeeves.kashpureff.org.
 
 ;; Web
 @			A	66.175.220.207
-@			AAAA	2600:3c01::3f:101
+@			AAAA	2600:3c01::3f:104
 ipv4			A	66.175.220.207
-ipv6			AAAA	2600:3c01::3f:101
+ipv6			AAAA	2600:3c01::3f:104
 www			A	66.175.220.207
-www			AAAA	2600:3c01::3f:101
+www			AAAA	2600:3c01::3f:104
 ipv4-www		A	66.175.220.207
-ipv6-www		AAAA	2600:3c01::3f:101
+ipv6-www		AAAA	2600:3c01::3f:104
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
