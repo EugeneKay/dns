@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1414905484	1H	5M	1W	1H	)
+	1417666773	1H	5M	1W	1H	)
 
 
 ;;
@@ -64,16 +64,29 @@ broadcast-private	A	198.19.23.255
 ;; Hosts
 ;;
 
+;; Dogbox
+dogbox			A	198.19.17.4
+
 ;; Dogcast
 dogcast			A	198.19.17.3
 
 ;; Dogprint
 dogprint		A	198.19.17.2
 
+;; EEK Nexii
+hammerhead		A	198.19.17.6
+
 ;; Elwha
 elwha			A	198.19.20.1
 elwha-private		A	198.19.20.1
 elwha-public		A	198.19.16.1
+
+;; Handroid
+handroid		A	198.19.17.5
+
+;; Bill+Lee
+bills-computer		A	198.19.17.8
+lees-iPad		A	198.19.17.7
 
 ;; Sealth
 sealth			A	198.19.21.0
