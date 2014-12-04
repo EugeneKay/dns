@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1417553413	1H	5M	1W	1H	)
+	1417661372	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -166,8 +166,8 @@ drive			CNAME	www
 mail			CNAME	www
 contacts		CNAME	www
 
-; Nagios
-nagios			CNAME	jeeves
+; Status
+status			CNAME	jeeves
 
 
 ;;
