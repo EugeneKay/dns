@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1417666773	1H	5M	1W	1H	)
+	1417667766	1H	5M	1W	1H	)
 
 
 ;;
@@ -75,14 +75,22 @@ dogprint		A	198.19.17.2
 
 ;; EEK Nexii
 hammerhead		A	198.19.17.6
+mako			A	198.19.17.11
+deb			A	198.19.17.12
 
 ;; Elwha
 elwha			A	198.19.20.1
 elwha-private		A	198.19.20.1
 elwha-public		A	198.19.16.1
 
+;; Evergreen
+evergreen		A	198.19.17.10
+
 ;; Handroid
 handroid		A	198.19.17.5
+
+;; Hiyu
+hiyu			A	198.19.17.9
 
 ;; Bill+Lee
 bills-computer		A	198.19.17.8
