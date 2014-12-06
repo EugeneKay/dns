@@ -15,3 +15,5 @@ $TTL 300
 10	PTR	evergreen.wa.kashpureff.org.
 11	PTR	mako.wa.kashpureff.org.
 12	PTR	deb.wa.kashpureff.org.
+13	PTR	hanntop.wa.kashpureff.org.
+14	PTR	hanntop-gbe.wa.kashpureff.org.
