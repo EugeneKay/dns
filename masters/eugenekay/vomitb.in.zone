@@ -1,0 +1,60 @@
+;
+; masters/eugenekay/vomitb.in.zone
+; EugeneKay/dns
+;
+; Vomit bin.
+;
+$ORIGIN vomitb.in.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1419059004	1H	5M	1W	1H	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.linode.com.
+_dns._udp		SRV	10	10	53	ns5.linode.com.
+
+;; Mail
+@			MX	10	jeeves.kashpureff.org.
+@			TXT	"v=spf1 +a:jeeves.kashpureff.org -all"
+@			SPF	"v=spf1 +a:jeeves.kashpureff.org -all"
+_smtps._tcp		SRV	10	10	465	jeeves.kashpureff.org.
+_submission._tcp	SRV	10	10	587	jeeves.kashpureff.org.
+_imap._tcp		SRV	10	10	143	jeeves.kashpureff.org.
+_imaps._tcp		SRV	10	10	993	jeeves.kashpureff.org.
+
+;; Web
+@			A 	192.99.197.16
+@			AAAA	2607:5300:60:64ef:1::1
+ipv4			A	192.99.197.16
+ipv6			AAAA	2607:5300:60:64ef:1::1
+www			A	192.99.197.16
+www			AAAA	2607:5300:60:64ef:1::1
+ipv4-www		A	192.99.197.16
+ipv6-www		AAAA	2607:5300:60:64ef:1::1
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	80	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	80	www
+
