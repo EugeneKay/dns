@@ -22,5 +22,5 @@ $TTL 300
 0	PTR	network.jeeves-udp.vpn.kashpureff.org.
 1	PTR	jeeves.vpn.kashpureff.org.
 2	PTR	elwha.vpn.kashpureff.org.
-3	PTR	jennifer.vpn.kashpureff.org.
+3	PTR	vpn.jennifer.kashpureff.org.
 
