@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1417906422	1H	5M	1W	1H	)
+	1419710115	1H	5M	1W	1H	)
 
 
 ;;
@@ -90,9 +90,9 @@ evergreen		A	198.19.17.10
 handroid		A	198.19.17.5
 
 ;; Hanntop
-hanntop			A	198.19.17.13
+hanntop			CNAME	hanntop-wifi
 hanntop-gbe		A	198.19.17.14
-hanntop-wifi		A	198.19.17.14
+hanntop-wifi		A	198.19.17.13
 
 ;; Hiyu
 hiyu			A	198.19.17.9
