@@ -2,7 +2,7 @@
 $ORIGIN gene.ric.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1420347875	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -49,9 +49,11 @@ www			AAAA	::1
 ipv4-www		A	127.0.0.1
 ipv6-www		AAAA	::1
 _http._tcp		SRV	10	10	80	www
-_https._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
-_https._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
+_https._tcp.www		SRV	10	10	443	www
 
 ;;
 ;; Hosts

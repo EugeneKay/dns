@@ -2,7 +2,7 @@
 $ORIGIN codingforjes.us.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1420347875	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -49,9 +49,9 @@ www                     AAAA    2600:3c01::3f:102
 ipv4-www                A       66.175.220.207
 ipv6-www                AAAA    2600:3c01::3f:102
 _http._tcp		SRV	10	10	80	www
-_https._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
-_https._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
 
 ;;
 ;; Subdomains

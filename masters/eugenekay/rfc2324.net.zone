@@ -2,7 +2,7 @@
 $ORIGIN rfc2324.net.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1420347875	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -49,6 +49,6 @@ www			AAAA	2607:5300:60:1c4b::3:12
 ipv4-www		A	198.27.67.75
 ipv6-www		AAAA	2607:5300:60:1c4b::3:12
 _http._tcp		SRV	10	10	80	www
-_https._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
-_https._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www

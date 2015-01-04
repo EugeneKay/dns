@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1419709881	1H	5M	1W	1H	)
+	1420347875	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -129,7 +129,8 @@ google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQ
 
 ;; Games
 _http._tcp.games	SRV	10	10	80	jack.kashpureff.org.
-_https._tcp.games	SRV	10	10	80	jack.kashpureff.org.
+_https._tcp.games	SRV	10	10	443	jack.kashpureff.org.
+_https._tcp.games	SRV	10	10	443	jack.kashpureff.org.
 _mc._tcp		SRV	10	10	25565	jack.kashpureff.org.
 _minecraft._tcp		SRV	10	10	25565	jack.kashpureff.org.
 _mc._tcp.games		SRV	10	10	25565	jack.kashpureff.org.
