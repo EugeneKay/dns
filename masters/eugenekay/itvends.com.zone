@@ -105,11 +105,11 @@ staticsafe.gapps	A	23.92.21.10
 staticsafe.gapps	AAAA	2600:3c03:e000:8c::3eb0:15
 _http._tcp.gapps	SRV	10	10	80	staticsafe.gapps
 ; zifnab
-gapps			A	192.99.197.16
-gapps			AAAA	2607:5300:60:64ef::1
-zifnab.gapps		A	192.99.197.16
-zifnab.gapps		AAAA	2607:5300:60:64ef::1
-_http._tcp.gapps	SRV	10	10	80	zifnab.gapps
+;gapps			A	192.99.197.16
+;gapps			AAAA	2607:5300:60:64ef::1
+;zifnab.gapps		A	192.99.197.16
+;zifnab.gapps		AAAA	2607:5300:60:64ef::1
+;_http._tcp.gapps	SRV	10	10	80	zifnab.gapps
 
 ;; ZNC
 znc			A	66.175.220.207
