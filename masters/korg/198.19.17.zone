@@ -4,6 +4,7 @@ $TTL 300
 	3	3600	300	86400	300	)
 @	NS	elwha.kashpureff.org.
 
+0	PTR	sealth-public.wa.kashpureff.org.
 2	PTR	dogprint.wa.kashpureff.org.
 3	PTR	dogcast.wa.kashpureff.org.
 4	PTR	dogbox.wa.kashpureff.org.

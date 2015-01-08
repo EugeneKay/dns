@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1419710115	1H	5M	1W	1H	)
+	1420691895	1H	5M	1W	1H	)
 
 
 ;;
@@ -104,7 +104,7 @@ lees-iPad		A	198.19.17.7
 ;; Sealth
 sealth			A	198.19.21.0
 sealth-private		A	198.19.21.0
-sealth-public		A	198.19.16.10
+sealth-public		A	198.19.17.0
 
 
 ;; WiFI APs
