@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1420692273	1H	5M	1W	1H	)
+	1421262196	1H	5M	1W	1H	)
 
 
 ;;
@@ -109,6 +109,11 @@ sealth			A	198.19.21.0
 sealth-private		A	198.19.21.0
 sealth-public		A	198.19.17.0
 
+;; Wenatche
+wenatchee		CNAME	wenatchee.kashpureff.org.
+_tcp.wenatchee		DNAME	_tcp.wenatchee.kashpureff.org.
+_udp.wenatchee		DNAME	_udp.wenatchee.kashpureff.org.
+ipmi.wenatchee		CNAME	ipmi.wenatchee.kashpureff.org.
 
 ;; WiFI APs
 wifi-netgear		A	198.19.16.2
