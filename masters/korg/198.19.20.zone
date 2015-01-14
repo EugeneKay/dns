@@ -1,7 +1,11 @@
+;
+; masters/korg/198.19.20.zone
+; EugeneKay/dns
+;
 $ORIGIN 20.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1421262196	3600	300	86400	300	)
+	1421262348	3600	300	86400	300	)
 @	NS	elwha.kashpureff.org.
 
 0	PTR	network-private.wa.kashpureff.org.
