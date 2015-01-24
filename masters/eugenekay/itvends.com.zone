@@ -2,7 +2,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1420783132	1H	5M	1W	1H	)
+	1422124544	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -81,8 +81,8 @@ lakridserne.gapps	A	85.159.213.120
 lakridserne.gapps	AAAA	2a01:7e00::f03c:91ff:fe73:cea0
 ;_http._tcp.gapps	SRV	10	10	80	lakridserne.gapps
 ; Moo
-gapps			A	204.77.2.45
-gapps			AAAA	2001:470:f1f6::45:1
+;gapps			A	204.77.2.45
+;gapps			AAAA	2001:470:f1f6::45:1
 moo.gapps		A	204.77.2.45
 moo.gapps		AAAA	2001:470:f1f6::45:1
 _http._tcp.gapps	SRV	10	10	80	moo.gapps
