@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1422168549	1H	5M	1W	1H	)
+	1422170121	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -135,6 +135,9 @@ _mc._tcp		SRV	10	10	25565	jack.kashpureff.org.
 _minecraft._tcp		SRV	10	10	25565	jack.kashpureff.org.
 _mc._tcp.games		SRV	10	10	25565	jack.kashpureff.org.
 _minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
+
+;; Unifi Controller
+unifi			CNAME	chetzemoka
 
 ;; XMPP/Jabber
 _xmpp-client._tcp	SRV	10	10	5222	xmpp.l.google.com.
