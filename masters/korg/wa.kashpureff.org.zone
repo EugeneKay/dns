@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1421262196	1H	5M	1W	1H	)
+	1422170058	1H	5M	1W	1H	)
 
 
 ;;
@@ -60,7 +60,7 @@ network-private		A	198.19.20.0
 network-private		TXT	"198.19.20.0/22"
 broadcast-private	A	198.19.23.255
 
-;; Pelx
+;; Plex
 plex			CNAME	elwha.kashpureff.org.
 
 ;;
