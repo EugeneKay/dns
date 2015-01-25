@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1422168243	1H	5M	1W	1H	)
+	1422168549	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -183,9 +183,17 @@ status			CNAME	jeeves
 ;; Hosts
 ;;
 
+
+;; Chetzemoka
+chetzemoka		A	198.19.20.30
+ipv4.chetzemoka		A	198.19.20.30
+_rdp._tcp.chetzemoka	SRV	10	10	3389	chetzemoka
+
+;; Dogfort
+dogfort			CNAME	wifi-dogfort.wa
+
 ;; Dogprint
-dogprint		A	198.19.17.2
-ipv4.dogprint		A	198.19.17.2
+dogprint		CNAME	dogprint.wa
 
 ;; Elwha
 elwha			A	198.19.20.1
