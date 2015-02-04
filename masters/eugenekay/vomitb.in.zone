@@ -7,7 +7,7 @@
 $ORIGIN vomitb.in.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1420347875	1H	5M	1W	1H	)
+	1423023754	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -53,6 +53,8 @@ www			A	192.99.197.16
 www			AAAA	2607:5300:60:64ef:1::1
 ipv4-www		A	192.99.197.16
 ipv6-www		AAAA	2607:5300:60:64ef:1::1
+*			A	192.99.197.16
+*			AAAA	2607:5300:60:64ef:1::1
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
