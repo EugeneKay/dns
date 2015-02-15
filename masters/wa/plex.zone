@@ -1,0 +1,23 @@
+; Plex
+$ORIGIN plex.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1423992505	1H	5M	1W	1H	)
+
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	elwha.kashpureff.org.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	elwha.kashpureff.org.
+_dns._udp		SRV	10	10	53	elwha.kashpureff.org.
+
+;; Web
+@			A 	198.19.20.20
