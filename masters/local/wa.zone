@@ -1,8 +1,8 @@
-; Unifi
-$ORIGIN unifi.
+; local, Washington
+$ORIGIN local.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1423992505	1H	5M	1W	1H	)
+	1423994199	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -19,5 +19,8 @@ $TTL 1H
 _dns._tcp		SRV	10	10	53	elwha.kashpureff.org.
 _dns._udp		SRV	10	10	53	elwha.kashpureff.org.
 
-;; Web
-@			A 	198.19.20.30
+;; Plex
+plex			CNAME	wenatchee.kashpureff.org.
+
+;; Unifi
+unifi			CNAME	chetzemoka.kashpureff.org.
