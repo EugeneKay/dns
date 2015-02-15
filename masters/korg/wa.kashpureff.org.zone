@@ -10,7 +10,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1423992505	1H	5M	1W	1H	)
+	1423994546	1H	5M	1W	1H	)
 
 
 ;;
@@ -64,6 +64,9 @@ broadcast-private	A	198.19.23.255
 ;;
 ;; Hosts
 ;;
+
+;; Dogbook
+dogbook			A	198.19.17.15
 
 ;; Dogbox
 dogbox			A	198.19.17.4

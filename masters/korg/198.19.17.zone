@@ -5,7 +5,7 @@
 $ORIGIN 17.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1421262348	3600	300	86400	300	)
+	1423994546	3600	300	86400	300	)
 @	NS	elwha.kashpureff.org.
 
 0	PTR	sealth-public.wa.kashpureff.org.
@@ -22,3 +22,4 @@ $TTL 300
 12	PTR	deb.wa.kashpureff.org.
 13	PTR	hanntop.wa.kashpureff.org.
 14	PTR	hanntop-gbe.wa.kashpureff.org.
+15	PTR	dogbook.wa.kashpureff.org.
