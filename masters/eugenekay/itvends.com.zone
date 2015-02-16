@@ -1,8 +1,13 @@
-; itvends.com
+;
+; masters/eugenekay/itvends.com.zone
+; EugeneKay/dns
+;
+; It Vends
+;
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1422214882	1H	5M	1W	1H	)
+	1424068346	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -39,13 +44,8 @@ _mc._tcp.games		SRV	10	10	25565	jack.kashpureff.org.
 _minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 
 ;; Mail
-@			MX	10	jeeves.kashpureff.org.
-@			TXT	"v=spf1 +a:jeeves.kashpureff.org -all"
-@			SPF	"v=spf1 +a:jeeves.kashpureff.org -all"
-_smtps._tcp		SRV	10	10	465	jeeves.kashpureff.org.
-_submission._tcp	SRV	10	10	587	jeeves.kashpureff.org.
-_imap._tcp		SRV	10	10	143	jeeves.kashpureff.org.
-_imaps._tcp		SRV	10	10	993	jeeves.kashpureff.org.
+@                       MX      10      jack.kashpureff.org.
+@                       TXT     "v=spf1 -all"
 
 ;; Web
 @			A	66.175.220.207

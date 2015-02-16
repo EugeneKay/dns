@@ -2,6 +2,8 @@
 ; masters/eugenekay/rfc2544.ninja.zone
 ; EugeneKay/dns
 ;
+; RFC 2544
+;
 
 ;;
 ;; Zone Info
@@ -13,7 +15,7 @@ $TTL 1H
 
 ;; Start-of-Authority
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1419844225	1H	5M	1W	1H	)
+	1424068346	1H	5M	1W	1H	)
 
 ;; Nameservers
 ; Authoritative
@@ -41,13 +43,8 @@ _dns._udp		SRV	10	10	53	ns4.linode.com.
 _dns._udp		SRV	10	10	53	ns5.linode.com.
 
 ;; Mail
-@                       MX      10      jeeves.kashpureff.org.
-@                       TXT     "v=spf1 +a:jeeves.kashpureff.org -all"
-@                       SPF     "v=spf1 +a:jeeves.kashpureff.org -all"
-_smtps._tcp             SRV     10      10      465     jeeves.kashpureff.org.
-_submission._tcp        SRV     10      10      587     jeeves.kashpureff.org.
-_imap._tcp              SRV     10      10      143     jeeves.kashpureff.org.
-_imaps._tcp             SRV     10      10      993     jeeves.kashpureff.org.
+@                       MX      10      jack.kashpureff.org.
+@                       TXT     "v=spf1 -all"
 
 ;; Web
 @			A	66.175.220.207

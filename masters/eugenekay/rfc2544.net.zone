@@ -1,8 +1,8 @@
 ;
-; masters/eugenekay/rfc1918.ninja.zone
+; masters/eugenekay/rfc2544.net.zone
 ; EugeneKay/dns
 ;
-; RFC1918 Ninja
+; RFC2544
 ;
 
 ;;
@@ -10,7 +10,7 @@
 ;;
 
 ;; Settings
-$ORIGIN rfc1918.ninja.
+$ORIGIN rfc2544.net.
 $TTL 1H
 
 ;; Start-of-Authority
@@ -48,13 +48,13 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 
 ;; Web
 @			A	66.175.220.207
-@			AAAA	2600:3c01::3f:104
+@			AAAA	2600:3c01::3f:107
 ipv4			A	66.175.220.207
-ipv6			AAAA	2600:3c01::3f:104
+ipv6			AAAA	2600:3c01::3f:107
 www			A	66.175.220.207
-www			AAAA	2600:3c01::3f:104
+www			AAAA	2600:3c01::3f:107
 ipv4-www		A	66.175.220.207
-ipv6-www		AAAA	2600:3c01::3f:104
+ipv6-www		AAAA	2600:3c01::3f:107
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www

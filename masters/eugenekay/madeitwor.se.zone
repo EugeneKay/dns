@@ -2,10 +2,12 @@
 ; masters/eugenekay/madeitwor.se
 ; EugeneKay/dns
 ;
+; Made It Worse
+;
 $ORIGIN madeitwor.se.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1424036504	1H	5M	1W	1H	)
+	1424068346	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;

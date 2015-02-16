@@ -1,8 +1,13 @@
-; Necrolounge.org
+;
+; masters/eugenekay/necrolounge.org.zone
+; EugeneKay/dns
+;
+; Necrolounge
+;
 $ORIGIN necrolounge.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1417401159	1H	5M	1W	1H	)
+	1424068346	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -44,23 +49,18 @@ _minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 tf2			CNAME	cahillmanley.com.
 
 ;; Mail
-@			MX	10	jeeves.kashpureff.org.
-@			TXT	"v=spf1 +a:jeeves.kashpureff.org -all"
-@			SPF	"v=spf1 +a:jeeves.kashpureff.org -all"
-_smtps._tcp		SRV	10	10	465	jeeves.kashpureff.org.
-_submission._tcp	SRV	10	10	587	jeeves.kashpureff.org.
-_imap._tcp		SRV	10	10	143	jeeves.kashpureff.org.
-_imaps._tcp		SRV	10	10	993	jeeves.kashpureff.org.
+@                       MX      10      jack.kashpureff.org.
+@                       TXT     "v=spf1 -all"
 
 ;; Web
-@			A	198.27.67.75
-@			AAAA	2607:5300:60:1c4b::3:10
-ipv4			A	198.27.67.75
-ipv6			AAAA	2607:5300:60:1c4b::3:10
-www			A	198.27.67.75
-www			AAAA	2607:5300:60:1c4b::3:10
-ipv4-www		A	198.27.67.75
-ipv6-www		AAAA	2607:5300:60:1c4b::3:10
+@                       A       66.175.220.207
+@                       AAAA    2600:3c01::3f:104
+ipv4                    A       66.175.220.207
+ipv6                    AAAA    2600:3c01::3f:104
+www                     A       66.175.220.207
+www                     AAAA    2600:3c01::3f:104
+ipv4-www                A       66.175.220.207
+ipv6-www                AAAA    2600:3c01::3f:104
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
