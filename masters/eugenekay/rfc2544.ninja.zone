@@ -15,7 +15,7 @@ $TTL 1H
 
 ;; Start-of-Authority
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1424068346	1H	5M	1W	1H	)
+	1424106295	1H	5M	1W	1H	)
 
 ;; Nameservers
 ; Authoritative
@@ -44,7 +44,7 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 
 ;; Mail
 @                       MX      10      jack.kashpureff.org.
-@                       TXT     "v=spf1 -all"
+@                       TXT     "v=spf1 mx -all"
 
 ;; Web
 @			A	66.175.220.207
