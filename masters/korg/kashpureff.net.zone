@@ -2,7 +2,7 @@
 $ORIGIN kashpureff.net.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1416792196	1H	5M	1W	1H	)
+	1424329581	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -43,18 +43,14 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 
 ;; Web
 @			A 	198.27.67.75
-@			AAAA	2607:5300:60:1c4b::3:8
+@			AAAA	2600:3c01::14:7118
 ipv4			A	198.27.67.75
-ipv6			AAAA	2607:5300:60:1c4b::3:8
+ipv6			AAAA	2600:3c01::14:7118
 www			A	198.27.67.75
-www			AAAA	2607:5300:60:1c4b::3:8
+www			AAAA	2600:3c01::14:7118
 ipv4-www		A	198.27.67.75
-ipv6-www		AAAA	2607:5300:60:1c4b::3:8
-_http._tcp		SRV	10 10 80 he.kashpureff.org.
-_https._tcp		SRV	10 10 443 he.kashpureff.org.
-_http._tcp.www		SRV	10 10 80 he.kashpureff.org.
-_https._tcp.www		SRV	10 10 443 he.kashpureff.org.
-
-;;
-;; Hosts
-;;
+ipv6-www		AAAA	2600:3c01::14:7118
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www

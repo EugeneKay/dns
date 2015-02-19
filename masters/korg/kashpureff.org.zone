@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1423992505	1H	5M	1W	1H	)
+	1424329581	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -155,13 +155,13 @@ _jabber._tcp		SRV	20	10	5269	xmpp-server4.l.google.com.
 
 ;; Web
 @			A	66.175.220.207
-@			AAAA	2600:3c01::3f:101
+@			AAAA	2600:3c01::14:7116
 ipv4			A	66.175.220.207
-ipv6			AAAA	2600:3c01::3f:101
+ipv6			AAAA	2600:3c01::14:7116
 www			A	66.175.220.207
-www			AAAA	2600:3c01::3f:101
+www			AAAA	2600:3c01::14:7116
 ipv4-www		A	66.175.220.207
-ipv6-www		AAAA	2600:3c01::3f:101
+ipv6-www		AAAA	2600:3c01::14:7116
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
@@ -186,7 +186,7 @@ status			CNAME	jeeves
 
 ;; Chetzemoka
 chetzemoka		A	198.19.20.30
-ipv4.chetzemoka		A	198.19.20.30
+ipv4-chetzemoka		A	198.19.20.30
 _rdp._tcp.chetzemoka	SRV	10	10	3389	chetzemoka
 
 ;; Dogfort
@@ -197,22 +197,24 @@ dogprint		CNAME	dogprint.wa
 
 ;; Elwha
 elwha			A	198.19.20.1
-ipv4.elwha		A	198.19.20.1
+ipv4-elwha		A	198.19.20.1
 _ssh._tcp.elwha		SRV	10	10	22	elwha
 
 ;; Jack
 jack			A	66.175.220.207
 jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
-ipv4.jack		A	66.175.220.207
-ipv6.jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+jack			AAAA	2600:3c01::14:71ff
+ipv4-jack		A	66.175.220.207
+ipv6-jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+ipv6-jack		AAAA	2600:3c01::14:71
 linode.jack		A	192.168.131.149
 _ssh._tcp.jack		SRV	10	10	22	jack
 
 ;; Jeeves
 jeeves			A	173.230.156.35
 jeeves			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
-ipv4.jeeves		A	173.230.156.35
-ipv6.jeeves		AAAA	2600:3c01::f03c:91ff:fe50:ebf0
+ipv4-jeeves		A	173.230.156.35
+ipv6-jeeves		AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
@@ -220,42 +222,42 @@ _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 ;; Jennifer
 jennifer		TXT	"SoYouStart"
 jennifer		A	198.27.81.174
-ipv4.jennifer		A	198.27.81.174
+ipv4-jennifer		A	198.27.81.174
 vpn.jennifer		A	198.19.0.3
 
 ;; John
 john			A	198.19.6.20
-ipv4.john		A	198.19.6.20
+ipv4-john		A	198.19.6.20
 _rdp._tcp.john		SRV	10	10	3389	john
 
 ;; Kitsap
 kitsap			A	10.13.0.80
-ipv4.kitsap		A	10.13.0.80
+ipv4-kitsap		A	10.13.0.80
 _ssh._tcp.kitsap	SRV	10	10	22	kitsap
 
 ;; Robert
 robert			A	198.19.6.10
-ipv4.robert		A	198.19.6.10
+ipv4-robert		A	198.19.6.10
 _rdp._tcp.robert	SRV	10	10	3389	robert
 
 ;; Sealth
 sealth			A	198.19.21.0
-ipv4.sealth		A	198.19.21.0
+ipv4-sealth		A	198.19.21.0
 _rdp._tcp.sealth	SRV	10	10	3389	sealth
 
 ;; Spokane
 spokane			A	198.19.21.1
-ipv4.spokane		A	198.19.21.1
+ipv4-spokane		A	198.19.21.1
 _ssh._tcp.spokane	SRV	10	10	22	spokane
 
 ;; Tokitae
 tokitae			A	198.19.20.10
-ipv4.tokitae		A	198.19.20.10
+ipv4-tokitae		A	198.19.20.10
 _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
 wenatchee		A	198.19.20.20
-ipv4.wenatchee		A	198.19.20.20
+ipv4-wenatchee		A	198.19.20.20
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 

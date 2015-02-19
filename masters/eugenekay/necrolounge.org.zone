@@ -7,7 +7,7 @@
 $ORIGIN necrolounge.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1424106295	1H	5M	1W	1H	)
+	1424329581	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -49,34 +49,19 @@ _minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 tf2			CNAME	cahillmanley.com.
 
 ;; Mail
-@                       MX      10      jack.kashpureff.org.
-@                       TXT     "v=spf1 mx -all"
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 mx -all"
 
 ;; Web
-@                       A       66.175.220.207
-@                       AAAA    2600:3c01::3f:104
-ipv4                    A       66.175.220.207
-ipv6                    AAAA    2600:3c01::3f:104
-www                     A       66.175.220.207
-www                     AAAA    2600:3c01::3f:104
-ipv4-www                A       66.175.220.207
-ipv6-www                AAAA    2600:3c01::3f:104
+@			A	66.175.220.207
+@			AAAA	2600:3c01::14:7104
+ipv4			A	66.175.220.207
+ipv6			AAAA	2600:3c01::14:7104
+www			A	66.175.220.207
+www			AAAA	2600:3c01::14:7104
+ipv4-www		A	66.175.220.207
+ipv6-www		AAAA	2600:3c01::14:7104
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
-
-;;
-;; Hosts
-;;
-
-;; Gaga
-gaga			A	184.105.79.31
-gaga			AAAA	2001:470:58:2::29:1
-gaga			AAAA	2001:470:58:2::29:ffff
-ipv4-gaga		A	184.105.79.31
-ipv6-gaga		AAAA	2001:470:58:2::29:1
-ipv6-gaga		AAAA	2001:470:58:2::29:ffff
-;gaga			SSHFP	
-;gaga			SSHFP	
-_ssh._tcp.gaga		SRV	10	10	22	gaga
