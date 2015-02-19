@@ -1,0 +1,46 @@
+;
+; masters/eugenekay/vlege.net.zone
+; EugeneKay/dns
+;
+; Vlege
+;
+
+
+;;
+;; Zone Info
+;;
+
+;; Settings
+$ORIGIN vlege.net.
+$TTL 1H
+
+;; Start-of-Authority
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1424330073	1H	5M	1W	1H	)
+
+;; Nameservers
+@			NS	ns1.linode.com.
+@			NS	ns2.linode.com.
+@			NS	ns3.linode.com.
+@			NS	ns4.linode.com.
+@			NS	ns5.linode.com.
+
+;; Mail
+@			MX	10	jeeves.kashpureff.org.
+@			TXT	"v=spf1 mx -all"
+
+;; Web
+@			A 	66.175.220.207
+@			AAAA	2600:3c01::14:7114
+ipv4			A	66.175.220.207
+ipv6			AAAA	2600:3c01::14:7114
+www			A	66.175.220.207
+www			AAAA	2600:3c01::14:7114
+ipv4-www		A	66.175.220.207
+ipv6-www		AAAA	2600:3c01::14:7114
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_https._tcp		SRV	10	10	443	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
+_https._tcp.www		SRV	10	10	443	www
