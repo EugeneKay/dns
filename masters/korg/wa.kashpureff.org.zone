@@ -2,7 +2,8 @@
 ; masters/wa.kashpureff.org.zone
 ; eugenekay/dns
 ;
-; Domain: wa.kashpureff.org
+; Kashpureff, Washington
+;
 
 ;;
 ;; Zone information
@@ -10,7 +11,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1423994546	1H	5M	1W	1H	)
+	1425013272	1H	5M	1W	1H	)
 
 
 ;;
@@ -115,7 +116,9 @@ wenatchee		CNAME	wenatchee.kashpureff.org.
 _tcp.wenatchee		DNAME	_tcp.wenatchee.kashpureff.org.
 _udp.wenatchee		DNAME	_udp.wenatchee.kashpureff.org.
 ipmi.wenatchee		CNAME	ipmi.wenatchee.kashpureff.org.
+wenatchee-private	CNAME	wenatchee.kashpureff.org.
+wenatchee-public	A	198.19.16.10
 
-;; WiFI APs
+;; WiFi APs
 wifi-netgear		A	198.19.16.2
 wifi-dogfort		A	198.19.16.3
