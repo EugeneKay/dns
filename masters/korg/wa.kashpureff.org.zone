@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1425013272	1H	5M	1W	1H	)
+	1425088725	1H	5M	1W	1H	)
 
 
 ;;
@@ -105,6 +105,9 @@ hiyu			A	198.19.17.9
 ;; Bill+Lee
 bills-computer		A	198.19.17.8
 lees-iPad		A	198.19.17.7
+
+;; Samprint
+samprint		A	198.19.18.53
 
 ;; Sealth
 sealth			A	198.19.21.0
