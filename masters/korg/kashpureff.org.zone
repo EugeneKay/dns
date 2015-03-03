@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1425235928	1H	5M	1W	1H	)
+	1425348126	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -202,6 +202,9 @@ dogprint		CNAME	dogprint.wa
 elwha			A	198.19.20.1
 ipv4-elwha		A	198.19.20.1
 _ssh._tcp.elwha		SRV	10	10	22	elwha
+
+;; Holly
+holly			A	192.249.63.155
 
 ;; Jack
 jack			A	66.175.220.207
