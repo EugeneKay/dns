@@ -13,7 +13,7 @@ $TTL 300
 ;; Authoritative
 @	NS	jeeves.kashpureff.org.
 @	NS	jennifer.kashpureff.org.
-@	NS	elwha.kashpureff.org.
+@	NS	wenatchee.kashpureff.org
 
 
 ;;

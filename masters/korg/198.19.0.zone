@@ -5,7 +5,7 @@
 $ORIGIN 0.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1421262348	3600	300	86400	300	)
+	1431059302	3600	300	86400	300	)
 ;;
 ;; Nameservers
 ;;
@@ -13,14 +13,14 @@ $TTL 300
 ;; Authoritative
 @	NS	jeeves.kashpureff.org.
 @	NS	jennifer.kashpureff.org.
-@	NS	elwha.kashpureff.org.
+@	NS	wenatchee.kashpureff.org
 
 
 ;;
 ;; Records
 ;;
 0	PTR	network.jeeves-udp.vpn.kashpureff.org.
-1	PTR	jeeves.vpn.kashpureff.org.
-2	PTR	elwha.vpn.kashpureff.org.
+1	PTR	vpn.jeeves.kashpureff.org.
+2	PTR	vpn.elwha.kashpureff.org.
 3	PTR	vpn.jennifer.kashpureff.org.
-
+4	PTR	vpn.wenatchee.kashpureff.org.

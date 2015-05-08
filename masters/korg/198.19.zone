@@ -13,7 +13,7 @@ $TTL 300
 ;; Authoritative
 @	NS	jeeves.kashpureff.org.
 @	NS	jennifer.kashpureff.org.
-@	NS	elwha.kashpureff.org.
+@	NS	wenatchee.kashpureff.org
 
 ;; Delegations
 ; VPN - 198.19.0.0/20
@@ -21,43 +21,43 @@ $TTL 300
 ;     UDP - 198.19.0.0/24
 0	NS	jeeves.kashpureff.org.
 0	NS	jennifer.kashpureff.org.
-0	NS	elwha.kashpureff.org.
+0	NS	wenatchee.kashpureff.org
 ;     TCP - 198.19.1.0/24
 1	NS	jeeves.kashpureff.org.
 1	NS	jennifer.kashpureff.org.
-1	NS	elwha.kashpureff.org.
+1	NS	wenatchee.kashpureff.org
 ;   Jennifer - 198.19.4.0/22
 ;     KVM/Bridge - 198.19.6.0/24
 6	NS	jeeves.kashpureff.org.
 6	NS	jennifer.kashpureff.org.
-6	NS	elwha.kashpureff.org.
+6	NS	wenatchee.kashpureff.org
 ; Washington - 198.19.16.0/20
 ;   Public LAN - 198.19.16.0/22
 16	NS	jeeves.kashpureff.org.
 16	NS	jennifer.kashpureff.org.
-16	NS	elwha.kashpureff.org.
+16	NS	wenatchee.kashpureff.org
 17	NS	jeeves.kashpureff.org.
 17	NS	jennifer.kashpureff.org.
-17	NS	elwha.kashpureff.org.
+17	NS	wenatchee.kashpureff.org
 18	NS	jeeves.kashpureff.org.
 18	NS	jennifer.kashpureff.org.
-18	NS	elwha.kashpureff.org.
+18	NS	wenatchee.kashpureff.org
 19	NS	jeeves.kashpureff.org.
 19	NS	jennifer.kashpureff.org.
-19	NS	elwha.kashpureff.org.
+19	NS	wenatchee.kashpureff.org
 ;    Private LAN - 198.19.20.0/22
 20	NS	jeeves.kashpureff.org.
 20	NS	jennifer.kashpureff.org.
-20	NS	elwha.kashpureff.org.
+20	NS	wenatchee.kashpureff.org
 21	NS	jeeves.kashpureff.org.
 21	NS	jennifer.kashpureff.org.
-21	NS	elwha.kashpureff.org.
+21	NS	wenatchee.kashpureff.org
 22	NS	jeeves.kashpureff.org.
 22	NS	jennifer.kashpureff.org.
-22	NS	elwha.kashpureff.org.
+22	NS	wenatchee.kashpureff.org
 23	NS	jeeves.kashpureff.org.
 23	NS	jennifer.kashpureff.org.
-23	NS	elwha.kashpureff.org.
+23	NS	wenatchee.kashpureff.org
 ; AWS - 198.19.32.0/20
 ;  Nothing has been actually setup here yet.
 

@@ -1,23 +1,23 @@
 ; local, Washington
 $ORIGIN local.
 $TTL 1H
-@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1425254024	1H	5M	1W	1H	)
+@	SOA	wenatchee.kashpureff.org.	eugene.kashpureff.org.	(
+	1431059404	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
 ;;
 
 ;; Authoritative
-@			NS	elwha.kashpureff.org.
+@			NS	wenatchee.kashpureff.org.
 
 ;;
 ;; Services
 ;;
 
 ;; DNS
-_dns._tcp		SRV	10	10	53	elwha.kashpureff.org.
-_dns._udp		SRV	10	10	53	elwha.kashpureff.org.
+_dns._tcp		SRV	10	10	53	wenatchee.kashpureff.org
+_dns._udp		SRV	10	10	53	wenatchee.kashpureff.org
 
 ;; Plex
 plex			CNAME	wenatchee-public.wa.kashpureff.org.
