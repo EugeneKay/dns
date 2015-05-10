@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431059668	1H	5M	1W	1H	)
+	1431234824	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -199,7 +199,7 @@ dogfort			CNAME	wifi-dogfort.wa
 dogprint		CNAME	dogprint.wa
 
 ;; Elwha
-elwha			CNAME	elwha.dynamic.kashpureff.org
+elwha			CNAME	elwha.dynamic
 _ssh._tcp.elwha		SRV	10	10	22	elwha
 vpn.elwha		A	198.19.0.2
 
@@ -225,7 +225,9 @@ _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 ;; Jennifer
 jennifer		TXT	"SoYouStart"
 jennifer		A	198.27.81.174
+jennifer		AAAA	2607:5300:60:22ae::1
 ipv4-jennifer		A	198.27.81.174
+ipv6-jennifer		AAAA	2607:5300:60:22ae::1
 vpn.jennifer		A	198.19.0.3
 
 ;; John
@@ -259,8 +261,8 @@ ipv4-tokitae		A	198.19.20.10
 _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
-wenatchee		A	198.19.20.20
-ipv4-wenatchee		A	198.19.20.20
+wenatchee		A	198.19.20.1
+ipv4-wenatchee		A	198.19.20.1
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 vpn.wenatchee		A	198.19.0.4
