@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431234824	1H	5M	1W	1H	)
+	1431307137	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -200,7 +200,7 @@ dogprint		CNAME	dogprint.wa
 
 ;; Elwha
 elwha			CNAME	elwha.dynamic
-_ssh._tcp.elwha		SRV	10	10	22	elwha
+_ssh._tcp.elwha		SRV	10	10	22	elwha.dynamic
 vpn.elwha		A	198.19.0.2
 
 ;; Jack
@@ -246,9 +246,8 @@ ipv4-robert		A	198.19.6.10
 _rdp._tcp.robert	SRV	10	10	3389	robert
 
 ;; Sealth
-sealth			A	198.19.21.0
-ipv4-sealth		A	198.19.21.0
-_rdp._tcp.sealth	SRV	10	10	3389	sealth
+sealth			CNAME	sealth.win
+_rdp._tcp.sealth	SRV	10	10	3389	sealth.win
 
 ;; Spokane
 spokane			A	198.19.21.1
@@ -262,7 +261,9 @@ _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
 wenatchee		A	198.19.20.1
+wenatchee		AAAA	2001:470:b:574::1
 ipv4-wenatchee		A	198.19.20.1
+ipv6-wenatchee		AAAA	2001:470:b:574::1
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 vpn.wenatchee		A	198.19.0.4
