@@ -5,8 +5,8 @@
 $ORIGIN 20.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	wenatchee.kashpureff.org	eugene.kashpureff.org.	(
-	1422168575	3600	300	86400	300	)
-@	NS	wenatchee.kashpureff.org
+	1431306361	3600	300	86400	300	)
+@	NS	wenatchee.kashpureff.org.
 
 0	PTR	network-private.wa.kashpureff.org.
 1	PTR	elwha-private.wa.kashpureff.org.
