@@ -1,8 +1,8 @@
 ;
-; masters/korg/2001.470.e9a4.zone
+; masters/korg/2001.470.b.574.zone
 ; EugeneKay/dns
 ;
-$ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
+$ORIGIN 4.7.5.0.b.0.0.0.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
 @	IN	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
 	1431307113	3600	300	86400	300	)
@@ -13,4 +13,4 @@ $TTL 300
 @	NS	ns4.linode.com.
 @	NS	ns5.linode.com.
 
-0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	network.wa.kashpureff.org.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	wenatchee.kashpureff.org.
