@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431307137	1H	5M	1W	1H	)
+	1431532459	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -203,6 +203,9 @@ elwha			CNAME	elwha.dynamic
 _ssh._tcp.elwha		SRV	10	10	22	elwha.dynamic
 vpn.elwha		A	198.19.0.2
 
+;; Hanntop
+hanntop			CNAME	hanntop.win
+
 ;; Jack
 jack			A	66.175.220.207
 jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
@@ -240,14 +243,21 @@ kitsap			A	10.13.0.80
 ipv4-kitsap		A	10.13.0.80
 _ssh._tcp.kitsap	SRV	10	10	22	kitsap
 
+;; Oliver
+oliver			A	198.19.0.5
+ipv4-oliver		A	198.19.0.5
+_rdp._tcp.oliver	SRV	10	10	3389	oliver
+
 ;; Robert
 robert			A	198.19.6.10
 ipv4-robert		A	198.19.6.10
 _rdp._tcp.robert	SRV	10	10	3389	robert
 
+;; Salish
+salish			CNAME	salish.win
+
 ;; Sealth
 sealth			CNAME	sealth.win
-_rdp._tcp.sealth	SRV	10	10	3389	sealth.win
 
 ;; Spokane
 spokane			A	198.19.21.1
