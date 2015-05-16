@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431532459	1H	5M	1W	1H	)
+	1431738182	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -278,4 +278,7 @@ _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 vpn.wenatchee		A	198.19.0.4
 
-;; Woodes Rogers
+;; Winode(Oliver's Rescue-Mode identity)
+winode			A	173.230.158.85
+ipv4-winode		A	173.230.158.85
+_ssh._tcp.winode	SRV	10	10	22	winode
