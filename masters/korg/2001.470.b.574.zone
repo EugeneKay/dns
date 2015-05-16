@@ -4,8 +4,8 @@
 ;
 $ORIGIN 4.7.5.0.b.0.0.0.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
-@	IN	SOA	elwha.kashpureff.org.	eugene.kashpureff.org.	(
-	1431307113	3600	300	86400	300	)
+@	IN	SOA	wenatchee.kashpureff.org.	eugene.kashpureff.org.	(
+	1431738160	3600	300	86400	300	)
 
 @	NS	ns1.linode.com.
 @	NS	ns2.linode.com.
