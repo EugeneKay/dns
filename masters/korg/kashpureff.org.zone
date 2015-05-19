@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431738182	1H	5M	1W	1H	)
+	1431995865	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -157,13 +157,13 @@ _jabber._tcp		SRV	20	10	5269	xmpp-server3.l.google.com.
 _jabber._tcp		SRV	20	10	5269	xmpp-server4.l.google.com.
 
 ;; Web
-@			A	66.175.220.207
+@			A	45.79.81.38
 @			AAAA	2600:3c01::14:7116
-ipv4			A	66.175.220.207
+ipv4			A	45.79.81.38
 ipv6			AAAA	2600:3c01::14:7116
-www			A	66.175.220.207
+www			A	45.79.81.38
 www			AAAA	2600:3c01::14:7116
-ipv4-www		A	66.175.220.207
+ipv4-www		A	45.79.81.38
 ipv6-www		AAAA	2600:3c01::14:7116
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
@@ -207,10 +207,10 @@ vpn.elwha		A	198.19.0.2
 hanntop			CNAME	hanntop.win
 
 ;; Jack
-jack			A	66.175.220.207
+jack			A	45.79.81.38
 jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
 jack			AAAA	2600:3c01::14:71ff
-ipv4-jack		A	66.175.220.207
+ipv4-jack		A	45.79.81.38
 ipv6-jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
 ipv6-jack		AAAA	2600:3c01::14:71
 linode.jack		A	192.168.131.149

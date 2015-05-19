@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431738249	1H	5M	1W	1H	)
+	1431995865	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -48,13 +48,13 @@ _minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A	66.175.220.207
+@			A	45.79.81.38
 @			AAAA	2600:3c01::14:7102
-ipv4			A	66.175.220.207
+ipv4			A	45.79.81.38
 ipv6			AAAA	2600:3c01::14:7102
-www			A	66.175.220.207
+www			A	45.79.81.38
 www			AAAA	2600:3c01::14:7102
-ipv4-www		A	66.175.220.207
+ipv4-www		A	45.79.81.38
 ipv6-www		AAAA	2600:3c01::14:7102
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
@@ -63,9 +63,9 @@ _https._tcp.www		SRV	10	10	443	www
 
 ; Google Apps
 ; Jack
-gapps			A	66.175.220.207
-gapps			AAAA	2600:3c01::3f:103
-jack.gapps		A	66.175.220.207
+;gapps			A	45.79.81.38
+;gapps			AAAA	2600:3c01::3f:103
+jack.gapps		A	45.79.81.38
 jack.gapps		AAAA	2600:3c01::3f:103
 _http._tcp.gapps	SRV	10	10	80	jack.gapps
 ; Jennifer
@@ -106,10 +106,10 @@ zifnab.gapps		AAAA	2607:5300:60:1c60::1
 _http._tcp.gapps	SRV	10	10	80	zifnab.gapps
 
 ;; ZNC
-znc			A	66.175.220.207
-znc			AAAA	2600:3c01::3f:103
-ipv4-znc		A	66.175.220.207
-ipv6-znc		AAAA	2600:3c01::3f:103
+znc			A	45.79.81.38
+znc			AAAA	2600:3c01::14:7102
+ipv4-znc		A	45.79.81.38
+ipv6-znc		AAAA	2600:3c01::14:7102
 _http._tcp.znc		SRV	10	10	80	znc
 _https._tcp.znc		SRV	10	10	443	znc
 _irc._tcp		SRV	10	10	6667	znc
