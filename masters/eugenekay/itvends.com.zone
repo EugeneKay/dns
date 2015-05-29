@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431995865	1H	5M	1W	1H	)
+	1432871389	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -68,21 +68,9 @@ _https._tcp.www		SRV	10	10	443	www
 jack.gapps		A	45.79.81.38
 jack.gapps		AAAA	2600:3c01::3f:103
 _http._tcp.gapps	SRV	10	10	80	jack.gapps
-; Jennifer
-gapps			A	198.27.81.174
-gapps			AAAA	2607:5300:60:22ae::0
-jennifer.gapps		A	198.27.81.174
-jennifer.gapps		AAAA	2607:5300:60:22ae::0
-_http._tcp.gapps	SRV	10	10	80	jennifer.gapps
-; lakridserne
-;gapps			A	85.159.213.120
-;gapps			AAAA	2a01:7e00::f03c:91ff:fe73:cea0
-lakridserne.gapps	A	85.159.213.120
-lakridserne.gapps	AAAA	2a01:7e00::f03c:91ff:fe73:cea0
-;_http._tcp.gapps	SRV	10	10	80	lakridserne.gapps
 ; Moo
-gapps			A	204.77.2.45
-gapps			AAAA	2001:470:f1f6::45:1
+;gapps			A	204.77.2.45
+;gapps			AAAA	2001:470:f1f6::45:1
 moo.gapps		A	204.77.2.45
 moo.gapps		AAAA	2001:470:f1f6::45:1
 _http._tcp.gapps	SRV	10	10	80	moo.gapps
@@ -98,12 +86,6 @@ gapps			AAAA	2600:3c03:e000:8c::3eb0:15
 staticsafe.gapps	A	23.92.21.10
 staticsafe.gapps	AAAA	2600:3c03:e000:8c::3eb0:15
 _http._tcp.gapps	SRV	10	10	80	staticsafe.gapps
-; zifnab
-gapps			A	192.99.31.16
-gapps			AAAA	2607:5300:60:1c60::1
-zifnab.gapps		A	192.99.31.16
-zifnab.gapps		AAAA	2607:5300:60:1c60::1
-_http._tcp.gapps	SRV	10	10	80	zifnab.gapps
 
 ;; ZNC
 znc			A	45.79.81.38
