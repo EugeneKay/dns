@@ -2,7 +2,7 @@
 ; masters/eugenekay/vlege.org.zone
 ; EugeneKay/dns
 ;
-; Vlege
+; Generic Domain
 ;
 
 
@@ -16,7 +16,8 @@ $TTL 1H
 
 ;; Start-of-Authority
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1424328616	1H	5M	1W	1H	)
+	1432871427	1H	5M	1W	1H	)
+
 ;; Nameservers
 @			NS	ns1.linode.com.
 @			NS	ns2.linode.com.
