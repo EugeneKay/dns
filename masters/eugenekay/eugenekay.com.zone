@@ -7,7 +7,7 @@
 $ORIGIN eugenekay.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431995865	1H	5M	1W	1H	)
+	1432870895	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -54,3 +54,9 @@ _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
+
+; rtorrent
+rtorrent		CNAME	vpn.elwha.kashpureff.org.
+
+; subsonic
+subsonic		CNAME	wenatchee.kashpureff.org.
