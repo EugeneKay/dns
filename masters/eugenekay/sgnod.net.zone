@@ -7,7 +7,7 @@
 $ORIGIN sgnod.net.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431995865	1H	5M	1W	1H	)
+	1432947127	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -40,14 +40,14 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A 	192.99.197.16
-@			AAAA	2607:5300:60:64ef:1::4
-ipv4			A	192.99.197.16
-ipv6			AAAA	2607:5300:60:64ef:1::4
-www			A	192.99.197.16
-www			AAAA	2607:5300:60:64ef:1::4
-ipv4-www		A	192.99.197.16
-ipv6-www		AAAA	2607:5300:60:64ef:1::4
+@			A 	45.56.86.169
+@			AAAA	2600:3c01::d6:e000
+ipv4			A	45.56.86.169
+ipv6			AAAA	2600:3c01::d6:e000
+www			A	45.56.86.169
+www			AAAA	2600:3c01::d6:e000
+ipv4-www		A	45.56.86.169
+ipv6-www		AAAA	2600:3c01::d6:e000
 _http._tcp              SRV     10      10      80      www
 _https._tcp             SRV     10      10      443     www
 _http._tcp.www          SRV     10      10      80      www
