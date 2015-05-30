@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431995865	1H	5M	1W	1H	)
+	1433024827	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -258,11 +258,6 @@ salish			CNAME	salish.win
 
 ;; Sealth
 sealth			CNAME	sealth.win
-
-;; Spokane
-spokane			A	198.19.21.1
-ipv4-spokane		A	198.19.21.1
-_ssh._tcp.spokane	SRV	10	10	22	spokane
 
 ;; Tokitae
 tokitae			A	198.19.20.10
