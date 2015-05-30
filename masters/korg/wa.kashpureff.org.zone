@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	wenatchee.kashpureff.org.	eugene.kashpureff.org.	(
-	1431059447	1H	5M	1W	1H	)
+	1433002614	1H	5M	1W	1H	)
 
 
 ;;
@@ -109,6 +109,9 @@ sealth			A	198.19.21.0
 sealth-private		A	198.19.21.0
 sealth-public		A	198.19.17.0
 
+;; Switch
+dogswitch		A	198.19.20.2
+
 ;; Wenatchee
 wenatchee               A       198.19.20.1
 wenatchee-private       A       198.19.20.1
@@ -116,5 +119,4 @@ wenatchee-public        A       198.19.16.1
 ipmi.wenatchee		CNAME	ipmi.wenatchee.kashpureff.org.
 
 ;; WiFi APs
-wifi-netgear		A	198.19.16.2
-wifi-dogfort		A	198.19.16.3
+dogfort			A	198.19.21.1
