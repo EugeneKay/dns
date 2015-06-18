@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1433024827	1H	5M	1W	1H	)
+	1434597539	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -225,14 +225,6 @@ linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 
-;; Jennifer
-jennifer		TXT	"SoYouStart"
-jennifer		A	198.27.81.174
-jennifer		AAAA	2607:5300:60:22ae::1
-ipv4-jennifer		A	198.27.81.174
-ipv6-jennifer		AAAA	2607:5300:60:22ae::1
-vpn.jennifer		A	198.19.0.3
-
 ;; John
 john			A	198.19.6.20
 ipv4-john		A	198.19.6.20
@@ -277,3 +269,6 @@ vpn.wenatchee		A	198.19.0.4
 winode			A	173.230.158.85
 ipv4-winode		A	173.230.158.85
 _ssh._tcp.winode	SRV	10	10	22	winode
+
+;; Yakima
+yakima			CNAME	yakima.win
