@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1432871389	1H	5M	1W	1H	)
+	1434601132	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -63,14 +63,14 @@ _https._tcp.www		SRV	10	10	443	www
 
 ; Google Apps
 ; Jack
-;gapps			A	45.79.81.38
-;gapps			AAAA	2600:3c01::3f:103
+gapps			A	45.79.81.38
+gapps			AAAA	2600:3c01::3f:103
 jack.gapps		A	45.79.81.38
 jack.gapps		AAAA	2600:3c01::3f:103
 _http._tcp.gapps	SRV	10	10	80	jack.gapps
 ; Moo
-;gapps			A	204.77.2.45
-;gapps			AAAA	2001:470:f1f6::45:1
+gapps			A	204.77.2.45
+gapps			AAAA	2001:470:f1f6::45:1
 moo.gapps		A	204.77.2.45
 moo.gapps		AAAA	2001:470:f1f6::45:1
 _http._tcp.gapps	SRV	10	10	80	moo.gapps
