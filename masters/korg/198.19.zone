@@ -5,7 +5,7 @@
 $ORIGIN 19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1438536453	3600	300	86400	300	)
+	1438546366	3600	300	86400	300	)
 ;;
 ;; Nameservers
 ;;
@@ -13,6 +13,7 @@ $TTL 300
 ;; Authoritative
 @	NS	jeeves.kashpureff.org.
 @	NS	hyak.kashpureff.org.
+
 
 ;; Delegations
 ; VPN - 198.19.0.0/20
@@ -44,4 +45,4 @@ $TTL 300
 23	NS	hyak.kashpureff.org.
 ; AWS - 198.19.32.0/20
 ;  Nothing has been actually setup here yet.
-
+;

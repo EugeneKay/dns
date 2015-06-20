@@ -5,7 +5,7 @@
 $ORIGIN vpn.kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1417416794	1H	5M	1W	1H	)
+	1438546366	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -30,22 +30,12 @@ network.jeeves-udp	TXT	"198.19.0.0/24"
 broadcast.jeeves-udp	A	198.19.0.255
 jeeves-udp		A	198.19.0.1
 elwha.jeeves-udp	A	198.19.0.2
-jennifer.jeeves-udp	A	198.19.0.3
 
 ; OpenVPN TCP
 network.jeeves-tcp	A	198.19.1.0
 network.jeeves-tcp	TXT	"198.19.1.0/24"
 broadcast.jeeves-tcp	A	198.19.0.255
 jeeves-tcp		A	198.19.1.1
-
-;; Jennifer(OVH)
-; KVM/Bridge
-network.jennifer-kvm	A	198.19.6.0
-network.jennifer-kvm	TXT	"198.19.6.0/24"
-broadcast.jennifer-kvm	A	198.19.6.255
-jennifer-kvm		A	198.19.6.1
-robert.jennifer-kvm	A	198.19.6.10
-john.jennifer-kvm	A	198.19.6.20
 
 
 ;;
@@ -57,12 +47,3 @@ john.jennifer-kvm	A	198.19.6.20
 
 ;; Jeeves
 jeeves			CNAME	jeeves-udp
-
-;; Jennifer
-jennifer		CNAME	jennifer-kvm
-
-;; John
-john			CNAME	john.jennifer-kvm
-
-;; Robert
-robert			CNAME	robert.jennifer-kvm

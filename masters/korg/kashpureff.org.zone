@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1434597539	1H	5M	1W	1H	)
+	1438546366	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -225,11 +225,6 @@ linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 
-;; John
-john			A	198.19.6.20
-ipv4-john		A	198.19.6.20
-_rdp._tcp.john		SRV	10	10	3389	john
-
 ;; Kitsap
 kitsap			A	10.13.0.80
 ipv4-kitsap		A	10.13.0.80
@@ -239,11 +234,6 @@ _ssh._tcp.kitsap	SRV	10	10	22	kitsap
 oliver			A	198.19.0.5
 ipv4-oliver		A	198.19.0.5
 _rdp._tcp.oliver	SRV	10	10	3389	oliver
-
-;; Robert
-robert			A	198.19.6.10
-ipv4-robert		A	198.19.6.10
-_rdp._tcp.robert	SRV	10	10	3389	robert
 
 ;; Salish
 salish			CNAME	salish.win
