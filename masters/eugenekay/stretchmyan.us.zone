@@ -7,7 +7,7 @@
 $ORIGIN stretchmyan.us.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431995865	1H	5M	1W	1H	)
+	1437411513	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -40,13 +40,13 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A 	45.79.81.38
+@			A 	173.230.158.85
 @			AAAA	2600:3c01::14:7112
-ipv4			A	45.79.81.38
+ipv4			A	173.230.158.85
 ipv6			AAAA	2600:3c01::14:7112
-www			A	45.79.81.38
+www			A	173.230.158.85
 www			AAAA	2600:3c01::14:7112
-ipv4-www		A	45.79.81.38
+ipv4-www		A	173.230.158.85
 ipv6-www		AAAA	2600:3c01::14:7112
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
