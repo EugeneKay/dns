@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1438546425	1H	5M	1W	1H	)
+	1438546442	1H	5M	1W	1H	)
 
 
 ;;
@@ -127,15 +127,6 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 @			MX	30 aspmx5.googlemail.com.
 @			TXT	"v=spf1 a:jeeves.kashpureff.org include:_spf.google.com ~all"
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
-
-;; Games
-_http._tcp.games	SRV	10	10	80	jack.kashpureff.org.
-_https._tcp.games	SRV	10	10	443	jack.kashpureff.org.
-_https._tcp.games	SRV	10	10	443	jack.kashpureff.org.
-_mc._tcp		SRV	10	10	25565	jack.kashpureff.org.
-_minecraft._tcp		SRV	10	10	25565	jack.kashpureff.org.
-_mc._tcp.games		SRV	10	10	25565	jack.kashpureff.org.
-_minecraft._tcp.games	SRV	10	10	25565	jack.kashpureff.org.
 
 ;; Salt
 salt			CNAME	jeeves.vpn.kashpureff.org.
