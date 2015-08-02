@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1438546459	1H	5M	1W	1H	)
+	1438546475	1H	5M	1W	1H	)
 
 
 ;;
@@ -198,6 +198,10 @@ vpn.elwha		A	198.19.0.2
 ;; Hanntop
 hanntop			CNAME	hanntop.win
 
+;; Hyak
+hyak			CNAME	hyak.dynamic
+_ssh._tcp.hyak		SRV	10	10	22	hyak
+
 ;; Jack
 jack			A	173.230.158.85
 jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
@@ -239,11 +243,9 @@ ipv4-tokitae		A	198.19.20.10
 _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
-wenatchee		CNAME	wenatchee.dynamic
+wenatchee		A	198.19.20.20
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
-vpn.wenatchee		A	198.19.0.4
-
 
 ;; Winode(Oliver's Rescue-Mode identity)
 winode			A	45.79.81.38
