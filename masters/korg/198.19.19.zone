@@ -4,9 +4,9 @@
 ;
 $ORIGIN 19.19.198.in-addr.arpa.
 $TTL 300
-@	IN	SOA	wenatchee.kashpureff.org	eugene.kashpureff.org.	(
-	1431306361	3600	300	86400	300	)
-@	NS	wenatchee.kashpureff.org.
+@	IN	SOA	hyak.kashpureff.org	eugene.kashpureff.org.	(
+	1438536378	3600	300	86400	300	)
+@	NS	hyak.kashpureff.org.
 
 
 255	PTR	broadcast-public.wa.kashpureff.org.

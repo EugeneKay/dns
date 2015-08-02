@@ -5,15 +5,14 @@
 $ORIGIN 1.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1431306361	3600	300	86400	300	)
+	1438536331	3600	300	86400	300	)
 ;;
 ;; Nameservers
 ;;
 
 ;; Authoritative
 @	NS	jeeves.kashpureff.org.
-@	NS	jennifer.kashpureff.org.
-@	NS	wenatchee.kashpureff.org.
+@	NS	hyak.kashpureff.org.
 
 
 ;;
