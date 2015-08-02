@@ -2,7 +2,7 @@
 $ORIGIN local.
 $TTL 1H
 @	SOA	wenatchee.kashpureff.org.	eugene.kashpureff.org.	(
-	1431059404	1H	5M	1W	1H	)
+	1437425056	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -24,3 +24,6 @@ plex			CNAME	wenatchee-public.wa.kashpureff.org.
 
 ;; Unifi
 unifi			CNAME	chetzemoka.kashpureff.org.
+
+;; Wenatchee
+wenatchee		CNAME	wenatchee.wa.kashpureff.org.
