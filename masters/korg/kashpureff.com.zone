@@ -2,7 +2,7 @@
 $ORIGIN kashpureff.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1424329581	1H	5M	1W	1H	)
+	1443397131	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -30,8 +30,6 @@ _dns._udp		SRV	10	10	53	ns3.linode.com.
 _dns._udp		SRV	10	10	53	ns4.linode.com.
 _dns._udp		SRV	10	10	53	ns5.linode.com.
 
-;; Git
-
 ;; Mail
 @			MX	10 aspmx.l.google.com.
 @			MX	20 alt1.aspmx.l.google.com.
@@ -41,17 +39,17 @@ _dns._udp		SRV	10	10	53	ns5.linode.com.
 @			MX	30 aspmx4.googlemail.com.
 @			MX	30 aspmx5.googlemail.com.
 @			TXT	"v=spf1 include:_spf.google.com ~all"
-@			TXT	"google-site-verification=djNGLJ0u-EP2hjnUmPbBcf8_vao0BBbdKkStaS_7PXs"
+@			TXT	"google-site-verification=ioQnYYqmefSIujQm2GKC9foufetwWpcA-k2dp-wTCHA"
 
 ;; Web
-@			A 	198.27.67.75
-@			AAAA	2600:3c01::14:7117
-ipv4			A	198.27.67.75
-ipv6			AAAA	2600:3c01::14:7117
-www			A	198.27.67.75
-www			AAAA	2600:3c01::14:7117
-ipv4-www		A	198.27.67.75
-ipv6-www		AAAA	2600:3c01::14:7117
+@			A	173.230.158.85
+@			AAAA	2600:3c01::14:7116
+ipv4			A	173.230.158.85
+ipv6			AAAA	2600:3c01::14:7116
+www			A	173.230.158.85
+www			AAAA	2600:3c01::14:7116
+ipv4-www		A	173.230.158.85
+ipv6-www		AAAA	2600:3c01::14:7116
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
