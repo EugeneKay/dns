@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1438536494	1H	5M	1W	1H	)
+	1443394470	1H	5M	1W	1H	)
 
 
 ;;
@@ -66,14 +66,12 @@ broadcast-private	A	198.19.23.255
 ;; Hosts
 ;;
 
-;; Dogbook
-dogbook			A	198.19.17.15
-
 ;; Dogbox
-dogbox			A	198.19.17.4
+dogbox			A	198.19.17.18
 
 ;; Dogcast
 dogcast			A	198.19.17.3
+dogplug			A	198.19.17.4
 
 ;; Dogprint
 dogprint		A	198.19.17.2
