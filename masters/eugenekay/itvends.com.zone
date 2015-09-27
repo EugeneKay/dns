@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1437411653	1H	5M	1W	1H	)
+	1443396959	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -57,27 +57,7 @@ _https._tcp.www		SRV	10	10	443	www
 ; Jack
 gapps			A	173.230.158.85
 gapps			AAAA	2600:3c01::3f:103
-jack.gapps		A	173.230.158.85
-jack.gapps		AAAA	2600:3c01::3f:103
-_http._tcp.gapps	SRV	10	10	80	jack.gapps
-; Moo
-gapps			A	204.77.2.45
-gapps			AAAA	2001:470:f1f6::45:1
-moo.gapps		A	204.77.2.45
-moo.gapps		AAAA	2001:470:f1f6::45:1
-_http._tcp.gapps	SRV	10	10	80	moo.gapps
-; sandeep
-gapps			A	104.200.21.20
-gapps			AAAA	2600:3c00::f03c:91ff:fe73:4aa
-sandeep.gapps		A	104.200.21.20
-sandeep.gapps		AAAA	2600:3c00::f03c:91ff:fe73:4aa
-_http._tcp.gapps	SRV	10	10	80	sandeep.gapps
-; staticsafe
-gapps			A	23.92.21.10
-gapps			AAAA	2600:3c03:e000:8c::3eb0:15
-staticsafe.gapps	A	23.92.21.10
-staticsafe.gapps	AAAA	2600:3c03:e000:8c::3eb0:15
-_http._tcp.gapps	SRV	10	10	80	staticsafe.gapps
+_http._tcp.gapps	SRV	10	10	80	jack.kashpureff.org.
 
 ;; ZNC
 znc			A	173.230.158.85
