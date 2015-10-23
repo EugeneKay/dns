@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1438546475	1H	5M	1W	1H	)
+	1445572203	1H	5M	1W	1H	)
 
 
 ;;
@@ -189,11 +189,6 @@ dogfort			CNAME	wifi-dogfort.wa
 
 ;; Dogprint
 dogprint		CNAME	dogprint.wa
-
-;; Elwha
-elwha			CNAME	elwha.dynamic
-_ssh._tcp.elwha		SRV	10	10	22	elwha.dynamic
-vpn.elwha		A	198.19.0.2
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
