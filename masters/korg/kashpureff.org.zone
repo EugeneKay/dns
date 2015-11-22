@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1445572203	1H	5M	1W	1H	)
+	1448232472	1H	5M	1W	1H	)
 
 
 ;;
@@ -239,6 +239,8 @@ _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
 wenatchee		A	198.19.20.20
+wenatchee		AAAA	2001:470:e9a4:20::1000
+
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 

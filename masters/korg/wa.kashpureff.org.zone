@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1443394470	1H	5M	1W	1H	)
+	1448232472	1H	5M	1W	1H	)
 
 
 ;;
@@ -109,8 +109,11 @@ dogswitch-2		A	198.19.20.3
 
 ;; Wenatchee
 wenatchee               A       198.19.20.20
+wenatchee		AAAA	2001:470:e9a4:20::1000
 wenatchee-private       A       198.19.20.20
+wenatchee-private	AAAA	2001:470:e9a4:20::1000
 wenatchee-public        A       198.19.16.20
+wenatchee-public	AAAA	2001:470:e9a4:16::1000
 ipmi.wenatchee		CNAME	ipmi.wenatchee.kashpureff.org.
 
 ;; WiFi APs
