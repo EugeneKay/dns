@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1448232472	1H	5M	1W	1H	)
+	1451267038	1H	5M	1W	1H	)
 
 
 ;;
@@ -91,6 +91,9 @@ handroid		A	198.19.17.5
 hanntop			CNAME	hanntop-wifi
 hanntop-gbe		A	198.19.17.14
 hanntop-wifi		A	198.19.17.13
+
+;; Honeydew
+honeydew		A	198.19.21.1
 
 ;; Hiyu
 hiyu			A	198.19.17.9
