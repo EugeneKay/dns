@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1448232472	1H	5M	1W	1H	)
+	1451267152	1H	5M	1W	1H	)
 
 
 ;;
@@ -192,6 +192,9 @@ dogprint		CNAME	dogprint.wa
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
+
+;; Honeydew
+honeydew		CNAME	honeydew.win
 
 ;; Hyak
 hyak			CNAME	hyak.dynamic
