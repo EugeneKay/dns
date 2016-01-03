@@ -5,7 +5,7 @@
 $ORIGIN vpn.kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1438546366	1H	5M	1W	1H	)
+	1451863148	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -13,10 +13,9 @@ $TTL 1H
 
 ;; Authoritative
 @			NS	ns1.linode.com.
-@			NS	ns2.linode.com.
+@			NS	ns2.he.net.
 @			NS	ns3.linode.com.
-@			NS	ns4.linode.com.
-@			NS	ns5.linode.com.
+@			NS	ns4.he.net.
 
 
 ;;

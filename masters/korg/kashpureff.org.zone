@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451267287	1H	5M	1W	1H	)
+	1451863148	1H	5M	1W	1H	)
 
 
 ;;
@@ -14,91 +14,76 @@ $TTL 1H
 
 ;; Authoritative
 @			NS	ns1.linode.com.
-@			NS	ns2.linode.com.
+@			NS	ns2.he.net.
 @			NS	ns3.linode.com.
-@			NS	ns4.linode.com.
-@			NS	ns5.linode.com.
+@			NS	ns4.he.net.
 
 ;; Delegations
 
 ; Dynamic
 dynamic			NS	ns1.linode.com.
-dynamic			NS	ns2.linode.com.
+dynamic			NS	ns2.he.net.
 dynamic			NS	ns3.linode.com.
-dynamic			NS	ns4.linode.com.
-dynamic			NS	ns5.linode.com.
+dynamic			NS	ns4.he.net.
 
 
 ; Washington
 wa			NS	ns1.linode.com.
-wa			NS	ns2.linode.com.
+wa			NS	ns2.he.net.
 wa			NS	ns3.linode.com.
-wa			NS	ns4.linode.com.
-wa			NS	ns5.linode.com.
+wa			NS	ns4.he.net.
 
 ; VPN
 vpn			NS	ns1.linode.com.
-vpn			NS	ns2.linode.com.
+vpn			NS	ns2.he.net.
 vpn			NS	ns3.linode.com.
-vpn			NS	ns4.linode.com.
-vpn			NS	ns5.linode.com.
+vpn			NS	ns4.he.net.
 
 ; Active Directory
 DomainDnsZones		NS	ns1.linode.com.
-DomainDnsZones		NS	ns2.linode.com.
+DomainDnsZones		NS	ns2.he.net.
 DomainDnsZones		NS	ns3.linode.com.
-DomainDnsZones		NS	ns4.linode.com.
-DomainDnsZones		NS	ns5.linode.com.
+DomainDnsZones		NS	ns4.he.net.
 ForestDnsZones		NS	ns1.linode.com.
-ForestDnsZones		NS	ns2.linode.com.
+ForestDnsZones		NS	ns2.he.net.
 ForestDnsZones		NS	ns3.linode.com.
-ForestDnsZones		NS	ns4.linode.com.
-ForestDnsZones		NS	ns5.linode.com.
+ForestDnsZones		NS	ns4.he.net.
 win			NS	ns1.linode.com.
-win			NS	ns2.linode.com.
+win			NS	ns2.he.net.
 win			NS	ns3.linode.com.
-win			NS	ns4.linode.com.
-win			NS	ns5.linode.com.
+win			NS	ns4.he.net.
 _msdcs			NS	ns1.linode.com.
-_msdcs			NS	ns2.linode.com.
+_msdcs			NS	ns2.he.net.
 _msdcs			NS	ns3.linode.com.
-_msdcs			NS	ns4.linode.com.
-_msdcs			NS	ns5.linode.com.
+_msdcs			NS	ns4.he.net.
 _sites			NS	ns1.linode.com.
-_sites			NS	ns2.linode.com.
+_sites			NS	ns2.he.net.
 _sites			NS	ns3.linode.com.
-_sites			NS	ns4.linode.com.
-_sites			NS	ns5.linode.com.
+_sites			NS	ns4.he.net.
 _gc._tcp		NS	ns1.linode.com.
-_gc._tcp		NS	ns2.linode.com.
+_gc._tcp		NS	ns2.he.net.
 _gc._tcp		NS	ns3.linode.com.
-_gc._tcp		NS	ns4.linode.com.
-_gc._tcp		NS	ns5.linode.com.
+_gc._tcp		NS	ns4.he.net.
 _kerberos._tcp		NS	ns1.linode.com.
-_kerberos._tcp		NS	ns2.linode.com.
+_kerberos._tcp		NS	ns2.he.net.
 _kerberos._tcp		NS	ns3.linode.com.
-_kerberos._tcp		NS	ns4.linode.com.
-_kerberos._tcp		NS	ns5.linode.com.
+_kerberos._tcp		NS	ns4.he.net.
 _kerberos._udp		NS	ns1.linode.com.
-_kerberos._udp		NS	ns2.linode.com.
+_kerberos._udp		NS	ns2.he.net.
 _kerberos._udp		NS	ns3.linode.com.
-_kerberos._udp		NS	ns4.linode.com.
-_kerberos._udp		NS	ns5.linode.com.
+_kerberos._udp		NS	ns4.he.net.
 _kpasswd._tcp		NS	ns1.linode.com.
-_kpasswd._tcp		NS	ns2.linode.com.
+_kpasswd._tcp		NS	ns2.he.net.
 _kpasswd._tcp		NS	ns3.linode.com.
-_kpasswd._tcp		NS	ns4.linode.com.
-_kpasswd._tcp		NS	ns5.linode.com.
+_kpasswd._tcp		NS	ns4.he.net.
 _kpasswd._udp		NS	ns1.linode.com.
-_kpasswd._udp		NS	ns2.linode.com.
+_kpasswd._udp		NS	ns2.he.net.
 _kpasswd._udp		NS	ns3.linode.com.
-_kpasswd._udp		NS	ns4.linode.com.
-_kpasswd._udp		NS	ns5.linode.com.
+_kpasswd._udp		NS	ns4.he.net.
 _ldap._tcp		NS	ns1.linode.com.
-_ldap._tcp		NS	ns2.linode.com.
+_ldap._tcp		NS	ns2.he.net.
 _ldap._tcp		NS	ns3.linode.com.
-_ldap._tcp		NS	ns4.linode.com.
-_ldap._tcp		NS	ns5.linode.com.
+_ldap._tcp		NS	ns4.he.net.
 
 
 ;;
@@ -107,15 +92,13 @@ _ldap._tcp		NS	ns5.linode.com.
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.
-_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.he.net.
 _dns._tcp		SRV	10	10	53	ns3.linode.com.
-_dns._tcp		SRV	10	10	53	ns4.linode.com.
-_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.he.net.
 _dns._udp		SRV	10	10	53	ns1.linode.com.
-_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns2.he.net.
 _dns._udp		SRV	10	10	53	ns3.linode.com.
-_dns._udp		SRV	10	10	53	ns4.linode.com.
-_dns._udp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns4.he.net.
 
 ;; Mail
 @			MX	10 aspmx.l.google.com.

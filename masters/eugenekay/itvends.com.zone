@@ -7,17 +7,16 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1443396959	1H	5M	1W	1H	)
+	1451863148	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
 
 ;; Authoritative
 @			NS	ns1.linode.com.
-@			NS	ns2.linode.com.
+@			NS	ns2.he.net.
 @			NS	ns3.linode.com.
-@			NS	ns4.linode.com.
-@			NS	ns5.linode.com.
+@			NS	ns4.he.net.
 
 ;;
 ;; Services
@@ -25,15 +24,13 @@ $TTL 1H
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.
-_dns._tcp		SRV	10	10	53	ns2.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.he.net.
 _dns._tcp		SRV	10	10	53	ns3.linode.com.
-_dns._tcp		SRV	10	10	53	ns4.linode.com.
-_dns._tcp		SRV	10	10	53	ns5.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.he.net.
 _dns._udp		SRV	10	10	53	ns1.linode.com.
-_dns._udp		SRV	10	10	53	ns2.linode.com.
+_dns._udp		SRV	10	10	53	ns2.he.net.
 _dns._udp		SRV	10	10	53	ns3.linode.com.
-_dns._udp		SRV	10	10	53	ns4.linode.com.
-_dns._udp		SRV	10	10	53	ns5.linode.com.
+_dns._udp		SRV	10	10	53	ns4.he.net.
 
 ;; Mail
 @                       MX      10      jack.kashpureff.org.

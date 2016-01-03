@@ -5,12 +5,11 @@
 $ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
 @	IN	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1438536460	3600	300	86400	300	)
+	1451863148	3600	300	86400	300	)
 
 @	NS	ns1.linode.com.
-@	NS	ns2.linode.com.
+@	NS	ns2.he.net.
 @	NS	ns3.linode.com.
-@	NS	ns4.linode.com.
-@	NS	ns5.linode.com.
+@	NS	ns4.he.net.
 
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	network.wa.kashpureff.org.
