@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1452452438	1H	5M	1W	1H	)
 
 
 ;;
@@ -65,9 +65,12 @@ broadcast-private	A	198.19.23.255
 ;; Dogbox
 dogbox			A	198.19.17.18
 
-;; Dogcast
-dogcast			A	198.19.17.3
-dogplug			A	198.19.17.4
+;; Television
+dogvision		A	198.19.17.13
+
+;; Chromecasts
+dongcast		A	198.19.17.3
+dogcast			A	198.19.17.4
 
 ;; Dogprint
 dogprint		A	198.19.17.2
@@ -82,11 +85,6 @@ evergreen		A	198.19.17.10
 
 ;; Handroid
 handroid		A	198.19.17.5
-
-;; Hanntop
-hanntop			CNAME	hanntop-wifi
-hanntop-gbe		A	198.19.17.14
-hanntop-wifi		A	198.19.17.13
 
 ;; Honeydew
 honeydew		A	198.19.21.1
