@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1452574087	1H	5M	1W	1H	)
 
 
 ;;
@@ -181,6 +181,7 @@ honeydew		CNAME	honeydew.win
 
 ;; Hyak
 hyak			CNAME	hyak.dynamic
+vpn.hyak		A	198.19.0.4
 _ssh._tcp.hyak		SRV	10	10	22	hyak
 
 ;; Jack
