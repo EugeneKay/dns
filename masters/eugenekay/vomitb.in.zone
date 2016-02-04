@@ -7,7 +7,7 @@
 $ORIGIN vomitb.in.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1454566314	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -37,16 +37,16 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A 	45.56.86.169
-@			AAAA	2600:3c01::d6:e000
-ipv4			A	45.56.86.169
-ipv6			AAAA	2600:3c01::d6:e000
-www			A	45.56.86.169
-www			AAAA	2600:3c01::d6:e000
-ipv4-www		A	45.56.86.169
-ipv6-www		AAAA	2600:3c01::d6:e000
-*			A	45.56.86.169
-*			AAAA	2600:3c01::d6:e000
+@			A 	104.238.157.31
+@			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
+ipv4			A	104.238.157.31
+ipv6			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
+www			A	104.238.157.31
+www			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
+ipv4-www		A	104.238.157.31
+ipv6-www		AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
+*			A	104.238.157.31
+*			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
