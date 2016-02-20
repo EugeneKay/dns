@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1452574075	1H	5M	1W	1H	)
+	1456003908	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -31,6 +31,9 @@ _dns._udp		SRV	10	10	53	ns1.linode.com.
 _dns._udp		SRV	10	10	53	ns2.he.net.
 _dns._udp		SRV	10	10	53	ns3.linode.com.
 _dns._udp		SRV	10	10	53	ns4.he.net.
+
+;; Games
+games			CNAME	hyak.kashpureff.org.
 
 ;; Mail
 @                       MX      10      jack.kashpureff.org.
