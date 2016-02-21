@@ -4,13 +4,34 @@
 ;
 $ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
-@	IN	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1456029313	3600	300	86400	300	)
+@	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1456033761	3600	300	86400	300	)
 
+;;
+;; Nameservers
+;;
+
+;; Authoritative
 @	NS	ns1.linode.com.
 @	NS	ns2.he.net.
 @	NS	ns3.linode.com.
 @	NS	ns4.he.net.
+
+;; Delegations
+; DHCP Ranges
+0.5.3.4.8.4.4.4.6.1.0.0 NS      ns1.linode.com.
+0.5.3.4.8.4.4.4.6.1.0.0 NS      ns2.he.net.
+0.5.3.4.8.4.4.4.6.1.0.0 NS      ns3.linode.com.
+0.5.3.4.8.4.4.4.6.1.0.0 NS      ns4.he.net.
+
+0.5.3.4.8.4.4.4.0.2.0.0 NS      ns1.linode.com.
+0.5.3.4.8.4.4.4.0.2.0.0 NS      ns2.he.net.
+0.5.3.4.8.4.4.4.0.2.0.0 NS      ns3.linode.com.
+0.5.3.4.8.4.4.4.0.2.0.0 NS      ns4.he.net.
+
+;;
+;; Records
+;;
 
 ; Network
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	network.wa.kashpureff.org.
