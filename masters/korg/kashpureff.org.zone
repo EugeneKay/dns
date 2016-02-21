@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1456029621	1H	5M	1W	1H	)
+	1456035228	1H	5M	1W	1H	)
 
 
 ;;
@@ -106,7 +106,8 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
 
 ;; Salt
-salt			CNAME	jeeves.vpn.kashpureff.org.
+salt			A	198.19.0.1
+salt			AAAA	2600:3c01:e001:2900::1
 
 ;; XMPP/Jabber
 _xmpp-client._tcp	SRV	10	10	5222	xmpp.l.google.com.
