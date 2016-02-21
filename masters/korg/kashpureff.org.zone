@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1452574087	1H	5M	1W	1H	)
+	1456029621	1H	5M	1W	1H	)
 
 
 ;;
@@ -32,12 +32,6 @@ wa			NS	ns1.linode.com.
 wa			NS	ns2.he.net.
 wa			NS	ns3.linode.com.
 wa			NS	ns4.he.net.
-
-; VPN
-vpn			NS	ns1.linode.com.
-vpn			NS	ns2.he.net.
-vpn			NS	ns3.linode.com.
-vpn			NS	ns4.he.net.
 
 ; Active Directory
 DomainDnsZones		NS	ns1.linode.com.
@@ -131,6 +125,10 @@ _jabber._tcp		SRV	20	10	5269	xmpp-server2.l.google.com.
 _jabber._tcp		SRV	20	10	5269	xmpp-server3.l.google.com.
 _jabber._tcp		SRV	20	10	5269	xmpp-server4.l.google.com.
 
+;; VPN
+vpn			A	173.230.156.35
+vpn			AAAA	2600:3c01::14:7001
+
 ;; Web
 @			A	173.230.158.85
 @			AAAA	2600:3c01::14:7116
@@ -164,7 +162,9 @@ status			CNAME	jeeves
 
 ;; Chetzemoka
 chetzemoka		A	198.19.20.30
+chetzemoka		AAAA	2001:470:e9a4:20::2000
 ipv4-chetzemoka		A	198.19.20.30
+ipv6-chetzemoka		AAAA	2001:470:e9a4:20::2000
 _rdp._tcp.chetzemoka	SRV	10	10	3389	chetzemoka
 
 ;; Dogfort
@@ -181,7 +181,10 @@ honeydew		CNAME	honeydew.win
 
 ;; Hyak
 hyak			CNAME	hyak.dynamic
+ipv6-hyak		AAAA	2001:470:e9a4::1
+ipv6-hyak		AAAA	2001:470:e9a4::ffff
 vpn.hyak		A	198.19.0.4
+vpn.hyak		AAAA	2600:3c01:e001:2900::4
 _ssh._tcp.hyak		SRV	10	10	22	hyak
 
 ;; Jack
@@ -201,6 +204,7 @@ ipv4-jeeves		A	173.230.156.35
 ipv6-jeeves		AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
+vpn.jeeves		AAAA	2600:3c01:e001:2900::1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 
 ;; Kitsap
@@ -210,7 +214,9 @@ _ssh._tcp.kitsap	SRV	10	10	22	kitsap
 
 ;; Oliver
 oliver			A	198.19.0.5
+oliver			AAAA	2600:3c01:e001:2900::5
 ipv4-oliver		A	198.19.0.5
+ipv6-oliver		AAAA	2600:3c01:e001:2900::5
 _rdp._tcp.oliver	SRV	10	10	3389	oliver
 
 ;; Salish
@@ -221,7 +227,9 @@ sealth			CNAME	sealth.win
 
 ;; Tokitae
 tokitae			A	198.19.20.10
+tokitae			AAAA	2001:470:e9a4:20::3000
 ipv4-tokitae		A	198.19.20.10
+ipv6-tokitae		AAAA	2001:470:e9a4:20::3000
 _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
