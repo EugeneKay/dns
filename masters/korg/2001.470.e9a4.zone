@@ -5,11 +5,23 @@
 $ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
 @	IN	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	3600	300	86400	300	)
+	1456029313	3600	300	86400	300	)
 
 @	NS	ns1.linode.com.
 @	NS	ns2.he.net.
 @	NS	ns3.linode.com.
 @	NS	ns4.he.net.
 
+; Network
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	network.wa.kashpureff.org.
+
+; Hyak 
+
+; Wenatchee				
+0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	wenatchee.kashpureff.org.
+
+; Chetzemoka
+0.0.0.2.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0 PTR	chetzemoka.kashpureff.org.
+
+; Tokitae
+0.0.0.3.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	tokitae.kashpureff.org.

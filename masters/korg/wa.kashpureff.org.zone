@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1452452438	1H	5M	1W	1H	)
+	1453271456	1H	5M	1W	1H	)
 
 
 ;;
@@ -103,6 +103,7 @@ sealth-public		A	198.19.17.0
 ;; Switches
 dogswitch-1		A	198.19.20.2
 dogswitch-2		A	198.19.20.3
+dogswitch-3		A	198.19.20.5
 
 ;; Wenatchee
 wenatchee               A       198.19.20.20
