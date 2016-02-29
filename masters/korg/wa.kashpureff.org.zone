@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1456034850	1H	5M	1W	1H	)
+	1456766404	1H	5M	1W	1H	)
 
 
 ;;
@@ -103,7 +103,10 @@ honeydew		A	198.19.21.1
 hiyu			A	198.19.17.9
 
 ;; Hyak
-hyak			A	198.19.22.19
+hyak-private		A	198.19.20.1
+hyak-private		AAAA	2001:470:e9a4:20::1
+hyak-public		A	198.19.16.1
+hyak-public		AAAA	2001:470:e9a4:16::1
 
 ;; Sealth
 sealth			A	198.19.21.0
