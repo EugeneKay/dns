@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1456003908	1H	5M	1W	1H	)
+	1457901884	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -52,14 +52,6 @@ _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
-
-; Google Apps
-gapps			A	173.230.158.85
-gapps			AAAA	2600:3c01::3f:103
-_http._tcp.gapps	SRV	10	10	80	jack.kashpureff.org.
-
-; Plex
-plex			CNAME	jeeves.kashpureff.org.
 
 ;; ZNC
 znc			A	173.230.158.85
