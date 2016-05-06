@@ -7,7 +7,7 @@
 $ORIGIN madeitwor.se.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1462510463	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -21,6 +21,10 @@ $TTL 1H
 ;;
 ;; Services
 ;;
+
+;; ACME
+_acme-challenge         CNAME   _acme-challenge.madeitwor.se.dynamic.kashpureff.org.
+_acme-challenge.www     CNAME   _acme-challenge.www.madeitwor.se.dynamic.kashpureff.org.
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.
