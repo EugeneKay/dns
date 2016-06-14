@@ -11,7 +11,7 @@
 
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1456766404	1H	5M	1W	1H	)
+	1465867006	1H	5M	1W	1H	)
 
 
 ;;
@@ -81,6 +81,7 @@ dogvision		A	198.19.17.13
 ;; Chromecasts
 dongcast		A	198.19.17.3
 dogcast			A	198.19.17.4
+woofer			A	198.19.17.7
 
 ;; Dogprint
 dogprint		A	198.19.17.2
@@ -98,9 +99,6 @@ handroid		A	198.19.17.5
 
 ;; Honeydew
 honeydew		A	198.19.21.1
-
-;; Hiyu
-hiyu			A	198.19.17.9
 
 ;; Hyak
 hyak-private		A	198.19.20.1
