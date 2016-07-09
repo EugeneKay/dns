@@ -5,8 +5,9 @@
 $ORIGIN 16.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	hyak.kashpureff.org	eugene.kashpureff.org.	(
-	1456034701	3600	300	86400	300	)
+	1468089227	3600	300	86400	300	)
 @	NS	hyak.kashpureff.org.
 0	PTR	network-public.wa.kashpureff.org.
 1	PTR	hyak-public.wa.kashpureff.org.
 20	PTR	wenatche-public.wa.kashpureff.org.
+30	PTR	jill.kashpureff.org.
