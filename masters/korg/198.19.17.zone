@@ -5,7 +5,7 @@
 $ORIGIN 17.19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	hyak.kashpureff.org	eugene.kashpureff.org.	(
-	1452452443	3600	300	86400	300	)
+	1468089366	3600	300	86400	300	)
 @	NS	hyak.kashpureff.org.
 
 0	PTR	sealth-public.wa.kashpureff.org.
@@ -14,10 +14,7 @@ $TTL 300
 4	PTR	dogcast.wa.kashpureff.org.
 5	PTR	handroid.wa.kashpureff.org.
 6	PTR	hammerhead.wa.kashpureff.org.
-7	PTR	lees-ipad.wa.kashpureff.org.
-8	PTR	bills-computer.wa.kashpureff.org.
-9	PTR	hiyu.wa.kashpureff.org.
-10	PTR	evergreen.wa.kashpureff.org.
+7	PTR	woofer.wa.kashpureff.org.
 11	PTR	mako.wa.kashpureff.org.
 12	PTR	deb.wa.kashpureff.org.
 13	PTR	dogvision.wa.kashpureff.org.
