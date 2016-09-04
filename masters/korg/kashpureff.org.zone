@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1468089366	1H	5M	1W	1H	)
+	1473019561	1H	5M	1W	1H	)
 
 
 ;;
@@ -190,11 +190,11 @@ _ssh._tcp.hyak		SRV	10	10	22	hyak
 
 ;; Jack
 jack			A	173.230.158.85
-jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+;jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
 jack			AAAA	2600:3c01::14:71ff
 ipv4-jack		A	173.230.158.85
-ipv6-jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
-ipv6-jack		AAAA	2600:3c01::14:71
+;ipv6-jack		AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+ipv6-jack		AAAA	2600:3c01::14:71ff
 linode.jack		A	192.168.131.149
 _ssh._tcp.jack		SRV	10	10	22	jack
 
