@@ -1,15 +1,15 @@
-; local, Washington
+; local names, Washington site
 $ORIGIN local.
 $TTL 1H
-@	SOA	wenatchee.kashpureff.org.	eugene.kashpureff.org.	(
-	1468089366	1H	5M	1W	1H	)
+@	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
+	1481577850	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
 ;;
 
 ;; Authoritative
-@			NS	wenatchee.kashpureff.org.
+@			NS	hyak.kashpureff.org.
 
 ;;
 ;; Services
@@ -38,8 +38,11 @@ unifi			CNAME	chetzemoka.kashpureff.org.
 ;; Crescenti
 crescenti		CNAME	crescenti.dhcp.wa.kashpureff.org.
 
+;; Phenom(zifnab's fileserver)
+phenom			A	192.0.2.2
+
 ;; Stomias
 stomias			CNAME	stomias.dhcp.wa.kashpureff.org.
 
 ;; Wenatchee
-wenatchee		CNAME	wenatchee.wa.kashpureff.org.
+wenatchee		CNAME	wenatchee.kashpureff.org.
