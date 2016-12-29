@@ -5,7 +5,7 @@
 $ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1468089366	3600	300	86400	300	)
+	1482988966	3600	300	86400	300	)
 
 ;;
 ;; Nameservers
@@ -51,3 +51,6 @@ $TTL 300
 
 ; Jill
 0.0.0.2.0.0.0.0.0.0.0.0.0.0.0.0.6.1.0.0 PTR	jill.kashpureff.org.
+
+; Yakima
+0.0.0.4.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	yakima.kashpureff.org.

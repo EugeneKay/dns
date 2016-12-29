@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1473019561	1H	5M	1W	1H	)
+	1482988966	1H	5M	1W	1H	)
 
 
 ;;
@@ -29,7 +29,7 @@ wa			NS	ns2.he.net.
 wa			NS	ns3.linode.com.
 wa			NS	ns4.he.net.
 
-; Active Directory
+; Active Directory-integrated
 DomainDnsZones		NS	ns1.linode.com.
 DomainDnsZones		NS	ns2.he.net.
 DomainDnsZones		NS	ns3.linode.com.
@@ -81,8 +81,8 @@ _ldap._tcp		NS	ns4.he.net.
 ;;
 
 ;; ACME
-_acme-challenge         CNAME   _acme-challenge.kashpureff.org.dynamic.kashpureff.org.
-_acme-challenge.www     CNAME   _acme-challenge.www.kashpureff.org.dynamic.kashpureff.org.
+_acme-challenge		CNAME	_acme-challenge.kashpureff.org.dynamic.kashpureff.org.
+_acme-challenge.www	CNAME	_acme-challenge.www.kashpureff.org.dynamic.kashpureff.org.
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.
@@ -93,6 +93,14 @@ _dns._udp		SRV	10	10	53	ns1.linode.com.
 _dns._udp		SRV	10	10	53	ns2.he.net.
 _dns._udp		SRV	10	10	53	ns3.linode.com.
 _dns._udp		SRV	10	10	53	ns4.he.net.
+
+;; LDAP(AD SRVs should be used where possible)
+; Oliver
+ldap			A	198.19.0.5
+ldap			AAAA	2600:3c01:e001:2900::5
+; Tokitae
+ldap			A	198.19.20.10
+ldap			AAAA	2001:470:e9a4:20::3000
 
 ;; Mail
 @			MX	10 aspmx.l.google.com.
@@ -247,6 +255,8 @@ ipv4-wenatchee		A	198.19.20.20
 ipv6-wenatchee		AAAA	2001:470:e9a4:20::1000
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
+ipmi-wenatchee		CNAME	ipmi.wenatchee
+wenatchee-ipmi		CNAME	ipmi.wenatchee
 
 ;; Winode(Oliver's Rescue-Mode identity)
 winode			A	45.79.81.38
@@ -254,4 +264,10 @@ ipv4-winode		A	45.79.81.38
 _ssh._tcp.winode	SRV	10	10	22	winode
 
 ;; Yakima
-yakima			CNAME	yakima.win
+yakima			A	198.19.20.40
+yakima			AAAA	2001:470:e9a4:20::4000
+ipv4-yakima		A	198.19.20.40
+ipv6-yakima		AAAA	2001:470:e9a4:20::4000
+ipmi.yakima		A	198.19.20.41
+ipmi-yakima		CNAME	ipmi.yakima
+yakima-ipmi		CNAME	ipmi.yakima
