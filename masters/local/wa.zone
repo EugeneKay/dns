@@ -2,7 +2,7 @@
 $ORIGIN local.
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1481577850	1H	5M	1W	1H	)
+	1483477718	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -37,6 +37,9 @@ unifi			CNAME	chetzemoka.kashpureff.org.
 
 ;; Crescenti
 crescenti		CNAME	crescenti.dhcp.wa.kashpureff.org.
+
+;; Jack(via P2P tunnel)
+jack			A	192.0.2.6
 
 ;; Phenom(zifnab's fileserver)
 phenom			A	192.0.2.2
