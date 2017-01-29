@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1482988966	1H	5M	1W	1H	)
+	1485657196	1H	5M	1W	1H	)
 
 
 ;;
@@ -114,7 +114,8 @@ ldap			AAAA	2001:470:e9a4:20::3000
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
 
 ;; Salt
-salt			A	198.19.0.1
+; Jeeves
+salt			A	173.230.156.35
 salt			AAAA	2600:3c01:e001:2900::1
 
 ;; XMPP/Jabber
@@ -241,6 +242,20 @@ salish			CNAME	salish.win
 ;; Sealth
 sealth			CNAME	sealth.win
 
+;; Terry
+terry			A	198.19.16.40
+terry			AAAA	2001:470:e9a4:16::3000
+ipv4-terry		A	198.19.16.40
+ipv6-terry		AAAA	2001:470:e9a4:16::3000
+_ssh._tcp.terry		SRV	10	10	22	terry
+
+;; Timmy
+timmy			A	192.99.0.49
+timmy			AAAA	2607:5300:60:3131::0
+ipv4-timmy		A	192.99.0.49
+ipv6-timmy		AAAA	2607:5300:60:3131::0
+_ssh._tcp.timmy		SRV	10	10	22	timmy
+
 ;; Tokitae
 tokitae			A	198.19.20.10
 tokitae			AAAA	2001:470:e9a4:20::3000
@@ -257,6 +272,10 @@ _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 ipmi-wenatchee		CNAME	ipmi.wenatchee
 wenatchee-ipmi		CNAME	ipmi.wenatchee
+plex.wenatchee		A	198.19.16.20
+plex.wenatchee		AAAA	2001:470:e9a4:16::1000
+_acme-challenge.wenatchee	CNAME	_acme-challenge.wenatchee.kashpureff.org.dynamic.kashpureff.org.
+_acme-challenge.plex.wenatchee	CNAME	_acme-challenge.plex.wenatchee.kashpureff.org.dynamic.kashpureff.org.
 
 ;; Winode(Oliver's Rescue-Mode identity)
 winode			A	45.79.81.38
