@@ -2,7 +2,7 @@
 $ORIGIN local.
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1483477718	1H	5M	1W	1H	)
+	1485658010	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -15,25 +15,24 @@ $TTL 1H
 ;; Services
 ;;
 
-;; DNS
-_dns._tcp		SRV	10	10	53	wenatchee.kashpureff.org
-_dns._udp		SRV	10	10	53	wenatchee.kashpureff.org
-
 ;; Plex
-plex			CNAME	wenatchee-public.wa.kashpureff.org.
+plex			CNAME	wenatchee
 
 ;; Sgnod
-sgnod			CNAME	wenatchee-public.wa.kashpureff.org.
+sgnod			CNAME	wenatchee
 
 ;; Subsonic
 subsonic		CNAME	wenatchee-public.wa.kashpureff.org.
 
 ;; Unifi
-unifi			CNAME	chetzemoka.kashpureff.org.
+unifi			CNAME	chetzemoka
 
 ;;
 ;; Hosts
 ;;
+
+;; Chetzemoka
+chetzemoka		A	198.19.20.30
 
 ;; Crescenti
 crescenti		CNAME	crescenti.dhcp.wa.kashpureff.org.
@@ -48,4 +47,7 @@ phenom			A	192.0.2.2
 stomias			CNAME	stomias.dhcp.wa.kashpureff.org.
 
 ;; Wenatchee
-wenatchee		CNAME	wenatchee.kashpureff.org.
+wenatchee		A	198.19.16.20
+
+;; Yakima
+yakima			A	198.19.20.40
