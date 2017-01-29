@@ -7,7 +7,7 @@
 $ORIGIN eugenekay.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1485657759	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -33,27 +33,24 @@ _dns._udp		SRV	10	10	53	ns3.linode.com.
 _dns._udp		SRV	10	10	53	ns4.he.net.
 
 ;; Mail
-@                       MX      10      jack.kashpureff.org.
-@                       TXT     "v=spf1 mx -all"
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 mx -all"
 
 ;; Web
-@                       A       173.230.156.35
-@                       AAAA    2600:3c01::f03c:91ff:fe50:ebf0
+@			A	173.230.156.35
+@			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 *			A	173.230.156.35
 *			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
-ipv4                    A       173.230.156.35
-ipv6                    AAAA    2600:3c01::f03c:91ff:fe50:ebf0
-www                     A       173.230.156.35
-www                     AAAA    2600:3c01::f03c:91ff:fe50:ebf0
-ipv4-www                A       173.230.156.35
-ipv6-www                AAAA    2600:3c01::f03c:91ff:fe50:ebf0
+ipv4			A	173.230.156.35
+ipv6			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
+www			A	173.230.156.35
+www			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
+ipv4-www		A	173.230.156.35
+ipv6-www		AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
 
-; rtorrent
-rtorrent		CNAME	vpn.elwha.kashpureff.org.
-
-; subsonic
-subsonic		CNAME	wenatchee.kashpureff.org.
+; Plex
+plex			CNAME	jeeves.kashpureff.org.

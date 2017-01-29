@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1485657196	1H	5M	1W	1H	)
+	1485657759	1H	5M	1W	1H	)
 
 
 ;;
@@ -79,10 +79,6 @@ _ldap._tcp		NS	ns4.he.net.
 ;;
 ;; Services
 ;;
-
-;; ACME
-_acme-challenge		CNAME	_acme-challenge.kashpureff.org.dynamic.kashpureff.org.
-_acme-challenge.www	CNAME	_acme-challenge.www.kashpureff.org.dynamic.kashpureff.org.
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.
