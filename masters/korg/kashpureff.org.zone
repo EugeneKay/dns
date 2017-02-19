@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1485657759	1H	5M	1W	1H	)
+	1487462485	1H	5M	1W	1H	)
 
 
 ;;
@@ -108,6 +108,12 @@ ldap			AAAA	2001:470:e9a4:20::3000
 @			MX	30 aspmx5.googlemail.com.
 @			TXT	"v=spf1 a:jeeves.kashpureff.org include:_spf.google.com ~all"
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
+eugene			MX	10	jack
+eugene			TXT	"v=spf1 a:jack.kashpureff.org -all"
+hannah			MX	10	jack
+hannah			TXT	"v=spf1 a:jack.kashpureff.org -all"
+taf			MX	10	jack
+taf			TXT	"v=spf1 a:jack.kashpureff.org -all"
 
 ;; Salt
 ; Jeeves
@@ -260,7 +266,6 @@ ipv6-tokitae		AAAA	2001:470:e9a4:20::3000
 _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
-wenatchee		A	198.19.20.20
 wenatchee		AAAA	2001:470:e9a4:20::1000
 ipv4-wenatchee		A	198.19.20.20
 ipv6-wenatchee		AAAA	2001:470:e9a4:20::1000
