@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1485657759	1H	5M	1W	1H	)
+	1488343507	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -38,6 +38,9 @@ games			CNAME	hyak.kashpureff.org.
 ;; Mail
 @                       MX      10      jack.kashpureff.org.
 @                       TXT     "v=spf1 mx -all"
+
+;; Torrent Tracker
+tracker			A	173.230.158.85
 
 ;; Web
 @			A	173.230.158.85
