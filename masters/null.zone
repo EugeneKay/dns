@@ -1,0 +1,16 @@
+;
+; masters/eugenekay/null.zone
+; EugeneKay/dns
+;
+; Null zone
+;
+
+$TTL 1H
+
+;; Start-of-Authority
+@	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
+	1488782993	1H	5M	1W	1H	)
+
+@			NS	hyak.kashpureff.org.
+@			A	127.0.0.1
+*			A	127.0.0.1
