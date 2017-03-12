@@ -7,7 +7,7 @@
 $ORIGIN selfloath.in.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1485657759	1H	5M	1W	1H	)
+	1489297140	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -50,6 +50,6 @@ _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
 
-;; Game API server
+;; Game Server
 game			A	173.230.158.85
 game			AAAA	2600:3c01::14:7113
