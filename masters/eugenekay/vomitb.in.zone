@@ -7,7 +7,7 @@
 $ORIGIN vomitb.in.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1454566314	1H	5M	1W	1H	)
+	1489374184	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -37,18 +37,17 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A 	104.238.157.31
-@			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
-ipv4			A	104.238.157.31
-ipv6			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
-www			A	104.238.157.31
-www			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
-ipv4-www		A	104.238.157.31
-ipv6-www		AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
-*			A	104.238.157.31
-*			AAAA	2001:19f0:8000:8846:5400:ff:fe1c:3896
+@			A 	173.230.156.191
+@			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
+ipv4			A	173.230.156.191
+ipv6			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
+www			A	173.230.156.191
+www			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
+ipv4-www		A	173.230.156.191
+ipv6-www		AAAA	2600:3c01::f03c:91ff:fe1f:7b72
+*			A	173.230.156.191
+*			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
-
