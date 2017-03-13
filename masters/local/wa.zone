@@ -2,7 +2,7 @@
 $ORIGIN local.
 $TTL 1H
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(
-	1485658010	1H	5M	1W	1H	)
+	1488764675	1H	5M	1W	1H	)
 
 ;;
 ;; Nameservers
@@ -17,6 +17,10 @@ $TTL 1H
 
 ;; Plex
 plex			CNAME	wenatchee
+
+;; Self Loathing
+selfloathing		CNAME	wenatchee
+game.selfloathing	CNAME	wenatchee
 
 ;; Sgnod
 sgnod			CNAME	wenatchee
