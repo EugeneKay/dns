@@ -36,12 +36,8 @@ $TTL 1H
 ;; Web
 @			A 	127.0.0.1
 @			AAAA	::1
-ipv4			A	127.0.0.1
-ipv6			AAAA	::1
 www			A	127.0.0.1
 www			AAAA	::1
-ipv4-www		A	127.0.0.1
-ipv6-www		AAAA	::1
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _https._tcp		SRV	10	10	443	www
@@ -61,5 +57,3 @@ dummyhost		SSHFP	1 1 __RSA_KEY__
 dummyhost		SSHFP	2 1 __DSA_KEY__
 dummyhost		TXT	"v=spf1 +a -all"
 dummyhost		SPF	"v=spf1 +a -all"
-ipv4-dummyhost		A	127.0.0.1
-ipv6-dummyhost		AAAA	::1
