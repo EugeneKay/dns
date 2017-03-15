@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1489541052	1H	5M	1W	1H	)
+	1489557102	1H	5M	1W	1H	)
 
 
 ;;
@@ -181,13 +181,18 @@ dogfort			CNAME	wifi-dogfort.wa
 ;; Dogprint
 dogprint		CNAME	dogprint.wa
 
+;; Gretel
+gretel			A	167.114.20.34
+gretel			AAAA	2607:5300:61:736::34:0
+gretel			AAAA	2607:5300:61:736::34:0
+
 ;; Hanntop
 hanntop			CNAME	hanntop.win
 
 ;; Hansel
 hansel			A	167.114.20.33
-hansel			AAAA	2607:5300:61:736::2:0
-hansel			AAAA	2607:5300:61:736::2:ffff
+hansel			AAAA	2607:5300:61:736::33:0
+hansel			AAAA	2607:5300:61:736::33:ffff
 _ssh._tcp.hansel	SRV	10	10	22	hansel
 
 ;; Honeydew
@@ -208,7 +213,8 @@ _ssh._tcp.jack		SRV	10	10	22	jack
 
 ;; Jill
 jill			A	167.114.20.32
-jill			AAAA	2607:5300:61:736::1:0
+jill			AAAA	2607:5300:61:736::32:0
+jill			AAAA	2607:5300:61:736::32:0
 _ssh._tcp.jill		SRV	10	10	22	jill
 
 ;; Jimmy
