@@ -184,6 +184,12 @@ dogprint		CNAME	dogprint.wa
 ;; Hanntop
 hanntop			CNAME	hanntop.win
 
+;; Hansel
+hansel			A	167.114.20.33
+hansel			AAAA	2607:5300:61:736::2:0
+hansel			AAAA	2607:5300:61:736::2:ffff
+_ssh._tcp.hansel	SRV	10	10	22	hansel
+
 ;; Honeydew
 honeydew		CNAME	honeydew.win
 
