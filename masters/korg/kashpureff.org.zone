@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1489557102	1H	5M	1W	1H	)
+	1490230860	1H	5M	1W	1H	)
 
 
 ;;
@@ -171,9 +171,7 @@ status			CNAME	jeeves
 
 
 ;; Chetzemoka
-chetzemoka		A	198.19.20.30
-chetzemoka		AAAA	2001:470:e9a4:20::2000
-_rdp._tcp.chetzemoka	SRV	10	10	3389	chetzemoka
+chetzemoka		CNAME	kennewick
 
 ;; Dogfort
 dogfort			CNAME	wifi-dogfort.wa
@@ -184,7 +182,7 @@ dogprint		CNAME	dogprint.wa
 ;; Gretel
 gretel			A	167.114.20.34
 gretel			AAAA	2607:5300:61:736::34:0
-gretel			AAAA	2607:5300:61:736::34:0
+gretel			AAAA	2607:5300:61:736::34:ffff
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
@@ -231,6 +229,11 @@ vpn.jeeves		A	198.19.0.1
 vpn.jeeves		AAAA	2600:3c01:e001:2900::1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
 
+;; Kennewick
+kennewick		A	198.19.20.30
+kennewick		AAAA	2001:470:e9a4:20::2000
+_rdp._tcp.kennewick	SRV	10	10	3389	kennewick
+
 ;; Kitsap
 kitsap			A	10.13.0.80
 _ssh._tcp.kitsap	SRV	10	10	22	kitsap
@@ -244,6 +247,11 @@ _rdp._tcp.monty		SRV	10	10	3389	monty
 oliver			A	198.19.0.5
 oliver			AAAA	2600:3c01:e001:2900::5
 _rdp._tcp.oliver	SRV	10	10	3389	oliver
+
+;; Rosina
+rosina			A	167.114.20.35
+rosina			AAAA	2607:5300:61:736::35:0
+_rdp._tcp.rosina	SRV	10	10	3389	rosina
 
 ;; Salish
 salish			CNAME	salish.win
