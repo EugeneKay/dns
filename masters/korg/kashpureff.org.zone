@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1490230860	1H	5M	1W	1H	)
+	1490500404	1H	5M	1W	1H	)
 
 
 ;;
@@ -169,6 +169,10 @@ status			CNAME	jeeves
 ;; Hosts
 ;;
 
+;; Chelan
+chelan			A	198.19.20.50
+chelan			AAAA	2001:470:e9a4:20::5000
+_rdp._tcp.chelan	SRV	10	10	3389	chelan
 
 ;; Chetzemoka
 chetzemoka		CNAME	kennewick
