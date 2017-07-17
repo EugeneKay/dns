@@ -1,0 +1,47 @@
+;
+; masters/eugenekay/vashon.xyz.zone
+; EugeneKay/dns
+;
+; It Vends
+;
+$ORIGIN vashon.xyz.
+$TTL 1H
+@	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
+	1498714429	1H	5M	1W	1H	)
+;;
+;; Nameservers
+;;
+
+;; Authoritative
+@			NS	ns1.linode.com.
+@			NS	ns2.he.net.
+@			NS	ns3.linode.com.
+@			NS	ns4.he.net.
+
+;;
+;; Services
+;;
+
+;; DNS
+_dns._tcp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns2.he.net.
+_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns4.he.net.
+_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._udp		SRV	10	10	53	ns2.he.net.
+_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns4.he.net.
+
+;; Mail
+@                       MX      10      jack.kashpureff.org.
+@                       TXT     "v=spf1 mx -all"
+
+;; Web
+@                       A       173.230.158.85
+@                       AAAA    2600:3c01::14:711b
+www                     A       173.230.158.85
+www                     AAAA    2600:3c01::14:711b
+_http._tcp		SRV	10	10	80	www
+_https._tcp		SRV	10	10	443	www
+_http._tcp.www		SRV	10	10	80	www
+_https._tcp.www		SRV	10	10	443	www
