@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1490500404	1H	5M	1W	1H	)
+	1495735423	1H	5M	1W	1H	)
 
 
 ;;
@@ -267,11 +267,6 @@ sealth			CNAME	sealth.win
 terry			A	198.19.16.40
 terry			AAAA	2001:470:e9a4:16::3000
 _ssh._tcp.terry		SRV	10	10	22	terry
-
-;; Timmy
-timmy			A	192.99.0.49
-timmy			AAAA	2607:5300:60:3131::0
-_ssh._tcp.timmy		SRV	10	10	22	timmy
 
 ;; Tokitae
 tokitae			A	198.19.20.10
