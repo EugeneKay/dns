@@ -1,13 +1,13 @@
 ;
-; masters/vashon/vashon.xyz.zone
+; masters/vashon/olympicislandfarm.com.zone
 ; EugeneKay/dns
 ;
-; It Vends
+; Olympic Island Farm
 ;
-$ORIGIN vashon.xyz.
+$ORIGIN olympicislandfarm.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1502313202	1H	5M	1W	1H	)
+	1502313072	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;

@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1495735423	1H	5M	1W	1H	)
+	1503028352	1H	5M	1W	1H	)
 
 
 ;;
@@ -92,11 +92,14 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 
 ;; LDAP(AD SRVs should be used where possible)
 ; Oliver
-ldap			A	198.19.0.5
-ldap			AAAA	2600:3c01:e001:2900::5
+;ldap			A	198.19.0.5
+;ldap			AAAA	2600:3c01:e001:2900::5
 ; Tokitae
 ldap			A	198.19.20.10
 ldap			AAAA	2001:470:e9a4:20::3000
+; Yakima
+;ldap			A	198.19.20.40
+;ldap			AAAA	2001:470:e9a4:20::4000
 
 ;; Mail
 @			MX	10 aspmx.l.google.com.
@@ -182,6 +185,12 @@ dogfort			CNAME	wifi-dogfort.wa
 
 ;; Dogprint
 dogprint		CNAME	dogprint.wa
+
+;; Elwha
+elwha			CNAME	elwha.dynamic
+vpn.elwha		A	198.19.0.6
+vpn.elwha		AAAA	2600:3c01:e001:2900::6
+_ssh._tcp.elwha		SRV	10	10	22	elwha
 
 ;; Gretel
 gretel			A	167.114.20.34

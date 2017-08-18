@@ -7,7 +7,7 @@
 $ORIGIN itvends.com.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1488343507	1H	5M	1W	1H	)
+	1500908788	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -21,6 +21,10 @@ $TTL 1H
 ;;
 ;; Services
 ;;
+
+;; CAA
+itvends.com.	IN	CAA	0 issue "letsencrypt.org"
+itvends.com.	IN	CAA	0 iodef "mailto:systems@kashpureff.org"
 
 ;; DNS
 _dns._tcp		SRV	10	10	53	ns1.linode.com.

@@ -1,5 +1,5 @@
 ;
-; masters/eugenekay/vashon.community.zone
+; masters/vashon/vashon.community.zone
 ; EugeneKay/dns
 ;
 ; It Vends
@@ -7,7 +7,7 @@
 $ORIGIN vashon.community.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1498714424	1H	5M	1W	1H	)
+	1502313195	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
