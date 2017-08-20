@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1503028352	1H	5M	1W	1H	)
+	1503248834	1H	5M	1W	1H	)
 
 
 ;;
@@ -22,12 +22,6 @@ $TTL 1H
 
 ; Dynamic
 dynamic			NS	jeeves.kashpureff.org.
-
-; Washington
-wa			NS	ns1.linode.com.
-wa			NS	ns2.he.net.
-wa			NS	ns3.linode.com.
-wa			NS	ns4.he.net.
 
 ; Active Directory-integrated
 DomainDnsZones		NS	ns1.linode.com.
@@ -111,14 +105,6 @@ ldap			AAAA	2001:470:e9a4:20::3000
 @			MX	30 aspmx5.googlemail.com.
 @			TXT	"v=spf1 a:jeeves.kashpureff.org include:_spf.google.com ~all"
 google._domainkey	TXT	"v=DKIM1; k=rsa; t=y; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCwFJ1yoazvdA2zyvND1Mlbt1Un+Sor4YUKzbLyESfq24xiIsUHtoG2v9jUFPl2sG/AvO0PXL9Nu7pGP4pPslfH9ch7xZe2nKGSnFWQuFzd+jz5LYtdBDmKBW+caUWpg5M7YycMI8S4uJESZd518Wf79vRTj0XkrP/MDtqf2+ywvQIDAQAB"
-eugene			MX	10	jack
-eugene			TXT	"v=spf1 a:jack.kashpureff.org -all"
-hannah			MX	10	jack
-hannah			TXT	"v=spf1 a:jack.kashpureff.org -all"
-systems			MX	10	jack
-systems			TXT	"v=spf1 a:jack.kashpureff.org -all"
-taf			MX	10	jack
-taf			TXT	"v=spf1 a:jack.kashpureff.org -all"
 
 ;; Salt
 ; Jeeves
@@ -167,7 +153,6 @@ contacts		CNAME	www
 ; Status
 status			CNAME	jeeves
 
-
 ;;
 ;; Hosts
 ;;
@@ -179,12 +164,6 @@ _rdp._tcp.chelan	SRV	10	10	3389	chelan
 
 ;; Chetzemoka
 chetzemoka		CNAME	kennewick
-
-;; Dogfort
-dogfort			CNAME	wifi-dogfort.wa
-
-;; Dogprint
-dogprint		CNAME	dogprint.wa
 
 ;; Elwha
 elwha			CNAME	elwha.dynamic
@@ -300,3 +279,42 @@ yakima			AAAA	2001:470:e9a4:20::4000
 ipmi.yakima		A	198.19.20.41
 ipmi-yakima		CNAME	ipmi.yakima
 yakima-ipmi		CNAME	ipmi.yakima
+
+;;
+;; Sites
+;;
+
+;; Vashon
+$ORIGIN vashon.kashpureff.org.
+gateway			A	198.19.20.1
+switch-1		A	198.19.20.4
+wifi-1			A	198.19.20.5
+printer			A	198.19.20.6
+xboxone			A	198.19.20.7
+echo-1			A	198.19.20.8
+
+;;
+;; Users
+;;
+
+;; Eugene
+$ORIGIN eugene.kashpureff.org.
+			MX	10	jack
+			TXT	"v=spf1 a:jack.kashpureff.org -all"
+manta			A	198.19.21.4
+
+;; Hannah
+$ORIGIN hannah.kashpureff.org.
+			MX	10	jack
+			TXT	"v=spf1 a:jack.kashpureff.org -all"
+
+;; Systems
+$ORIGIN systems.kashpureff.org.
+			MX	10	jack
+			TXT	"v=spf1 a:jack.kashpureff.org -all"
+
+;; Transactions, Accouns, and Family
+$ORIGIN taf.kashpureff.org.
+taf			MX	10	jack
+taf			TXT	"v=spf1 a:jack.kashpureff.org -all"
+
