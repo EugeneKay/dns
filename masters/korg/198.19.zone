@@ -5,7 +5,7 @@
 $ORIGIN 19.198.in-addr.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1503441794	3600	300	86400	300	)
+	1507859656	3600	300	86400	300	)
 ;;
 ;; Nameservers
 ;;
@@ -45,6 +45,11 @@ $TTL 300
 7.20	PTR	xboxone.vashon.kashpureff.org.
 8.20	PTR	echo-1.vashon.kashpureff.org.
 9.20	PTR	echo-2.vashon.kashpureff.org.
+10.20	PTR	tokitae.kashpureff.org.
+11.20	PTR	tplink-squid.vashon.kashpureff.org.
+12.20	PTR	tplink-tube.vashon.kashpureff.org.
+13.20	PTR	hue-bridge.vashon.kashpureff.org.
+20.20	PTR	wenatchee.kashpureff.org.
 
 21	TXT	"User Space"
 0.21	PTR	sealth.kashpureff.org.
@@ -52,6 +57,9 @@ $TTL 300
 2.21	PTR	salish.kashpureff.org.
 3.21	PTR	salish.kashpureff.org.
 4.21	PTR	manta.eugene.kashpureff.org.
+5.21	PTR	hanndroid.hannah.kashpureff.org.
+6.21	PTR	iphone.eugene.kashpureff.org.
+7.21	PTR	redband.eugene.kashpureff.org.
 
 22	NS	jeeves.kashpureff.org.
 

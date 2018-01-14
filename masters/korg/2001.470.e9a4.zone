@@ -5,7 +5,7 @@
 $ORIGIN 4.a.9.e.0.7.4.0.1.0.0.2.ip6.arpa.
 $TTL 300
 @	IN	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1490500440	3600	300	86400	300	)
+	1515959772	3600	300	86400	300	)
 
 ;;
 ;; Nameservers
@@ -37,8 +37,8 @@ $TTL 300
 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0	PTR	network.wa.kashpureff.org.
 
 ; Hyak
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	hyak-private.wa.kashpureff.org.
-1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.1.0.0	PTR	hyak-public.wa.kashpureff.org.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	elwha-private.wa.kashpureff.org.
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.6.1.0.0	PTR	elwha-public.wa.kashpureff.org.
 
 ; Wenatchee
 0.0.0.1.0.0.0.0.0.0.0.0.0.0.0.0.0.2.0.0	PTR	wenatchee.kashpureff.org.

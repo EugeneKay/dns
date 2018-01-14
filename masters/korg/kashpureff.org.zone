@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1503441784	1H	5M	1W	1H	)
+	1515959722	1H	5M	1W	1H	)
 
 
 ;;
@@ -150,12 +150,18 @@ drive			CNAME	www
 mail			CNAME	www
 contacts		CNAME	www
 
+; Externally-hosted
+blog			CNAME	ghs.googlehosted.com.
+
 ; Status
 status			CNAME	jeeves
 
 ;;
 ;; Hosts
 ;;
+
+;; Dynamically-Allocated
+hosts			NS	jeeves.kashpureff.org.
 
 ;; Chelan
 chelan			A	198.19.20.50
@@ -166,24 +172,13 @@ _rdp._tcp.chelan	SRV	10	10	3389	chelan
 chetzemoka		CNAME	kennewick
 
 ;; Elwha
-elwha			CNAME	elwha.dynamic
+elwha			CNAME	elwha.hosts
 vpn.elwha		A	198.19.0.6
 vpn.elwha		AAAA	2600:3c01:e001:2900::6
-_ssh._tcp.elwha		SRV	10	10	22	elwha
-
-;; Gretel
-gretel			A	167.114.20.34
-gretel			AAAA	2607:5300:61:736::34:0
-gretel			AAAA	2607:5300:61:736::34:ffff
+_ssh._tcp.elwha		SRV	10	10	22	elwha.hosts
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
-
-;; Hansel
-hansel			A	167.114.20.33
-hansel			AAAA	2607:5300:61:736::33:0
-hansel			AAAA	2607:5300:61:736::33:ffff
-_ssh._tcp.hansel	SRV	10	10	22	hansel
 
 ;; Honeydew
 honeydew		CNAME	honeydew.win
@@ -196,21 +191,10 @@ _ssh._tcp.hyak		SRV	10	10	22	hyak
 
 ;; Jack
 jack			A	173.230.158.85
-;jack			AAAA	2600:3c01::f03c:91ff:fe89:3fb7
+jack			AAAA	2600:3c01::14:7100
 jack			AAAA	2600:3c01::14:71ff
 linode.jack		A	192.168.131.149
 _ssh._tcp.jack		SRV	10	10	22	jack
-
-;; Jill
-jill			A	167.114.20.32
-jill			AAAA	2607:5300:61:736::32:0
-jill			AAAA	2607:5300:61:736::32:0
-_ssh._tcp.jill		SRV	10	10	22	jill
-
-;; Jimmy
-jimmy			A	149.56.22.54
-jimmy			AAAA	2607:5300:0061:0736::
-_ssh._tcp.jimmy		SRV	10	10	22	jimmy
 
 ;; Jeeves
 jeeves			A	173.230.156.35
@@ -230,20 +214,10 @@ _rdp._tcp.kennewick	SRV	10	10	3389	kennewick
 kitsap			A	10.13.0.80
 _ssh._tcp.kitsap	SRV	10	10	22	kitsap
 
-;; Monty
-monty			A	167.114.20.33
-monty			AAAA	2607:5300:61:736::2:0
-_rdp._tcp.monty		SRV	10	10	3389	monty
-
 ;; Oliver
 oliver			A	198.19.0.5
 oliver			AAAA	2600:3c01:e001:2900::5
 _rdp._tcp.oliver	SRV	10	10	3389	oliver
-
-;; Rosina
-rosina			A	167.114.20.35
-rosina			AAAA	2607:5300:61:736::35:0
-_rdp._tcp.rosina	SRV	10	10	3389	rosina
 
 ;; Salish
 salish			CNAME	salish.win
@@ -263,6 +237,7 @@ _rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
 wenatchee		AAAA	2001:470:e9a4:20::1000
+ipv4.wenatchee		A	198.19.20.20
 _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 ipmi-wenatchee		CNAME	ipmi.wenatchee
@@ -293,6 +268,9 @@ printer			A	198.19.20.6
 xboxone			A	198.19.20.7
 echo-1			A	198.19.20.8
 echo-2			A	198.19.20.9
+tplink-squid		A	198.19.20.11
+tplink-tube		A	198.19.20.12
+hue-bridge		A	198.19.20.13
 
 ;;
 ;; Users
@@ -300,22 +278,27 @@ echo-2			A	198.19.20.9
 
 ;; Eugene
 $ORIGIN eugene.kashpureff.org.
-			MX	10	jack
-			TXT	"v=spf1 a:jack.kashpureff.org -all"
+@			A	45.33.44.207
+@			AAAA	2600:3c01::f03c:91ff:fecc:ccec
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 a:jack.kashpureff.org -all"
 manta			A	198.19.21.4
+iphone			A	198.19.21.6
+redband			A	198.19.21.7
 
 ;; Hannah
 $ORIGIN hannah.kashpureff.org.
-			MX	10	jack
-			TXT	"v=spf1 a:jack.kashpureff.org -all"
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 a:jack.kashpureff.org -all"
+hanndroid		A	198.19.21.5
 
 ;; Systems
 $ORIGIN systems.kashpureff.org.
-			MX	10	jack
-			TXT	"v=spf1 a:jack.kashpureff.org -all"
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 a:jack.kashpureff.org -all"
 
 ;; Transactions, Accouns, and Family
 $ORIGIN taf.kashpureff.org.
-taf			MX	10	jack
-taf			TXT	"v=spf1 a:jack.kashpureff.org -all"
+@			MX	10	jack.kashpureff.org.
+@			TXT	"v=spf1 a:jack.kashpureff.org -all"
 
