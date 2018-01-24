@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1515959722	1H	5M	1W	1H	)
+	1516154029	1H	5M	1W	1H	)
 
 
 ;;
@@ -268,9 +268,11 @@ printer			A	198.19.20.6
 xboxone			A	198.19.20.7
 echo-1			A	198.19.20.8
 echo-2			A	198.19.20.9
+tokitae			A	198.19.20.10
 tplink-squid		A	198.19.20.11
 tplink-tube		A	198.19.20.12
 hue-bridge		A	198.19.20.13
+echo-3			A	198.19.20.14
 
 ;;
 ;; Users
