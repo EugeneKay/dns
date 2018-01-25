@@ -7,7 +7,7 @@
 $ORIGIN atsp.in.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1516775589	1H	5M	1W	1H	)
+	1516905324	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
@@ -35,6 +35,8 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 ;; Mail
 @                       MX      10      jack.kashpureff.org.
 @                       TXT     "v=spf1 mx -all"
+me			MX	10	jack.kashpureff.org.
+me			TXT	"v=spf1 mx -all"
 
 ;; Web
 @			A 	173.230.158.85
