@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1H
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1516154029	1H	5M	1W	1H	)
+	1532987258	1H	5M	1W	1H	)
 
 
 ;;
@@ -198,8 +198,9 @@ _ssh._tcp.jack		SRV	10	10	22	jack
 
 ;; Jeeves
 jeeves			A	173.230.156.35
-jeeves			AAAA	2600:3c01::14:7000
-jeeves			AAAA	2600:3c01::14:70ff
+;jeeves			AAAA	2600:3c01::14:7000
+;jeeves			AAAA	2600:3c01::14:70ff
+jeeves			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
 vpn.jeeves		AAAA	2600:3c01:e001:2900::1
@@ -266,13 +267,16 @@ switch-1		A	198.19.20.4
 wifi-1			A	198.19.20.5
 printer			A	198.19.20.6
 xboxone			A	198.19.20.7
-echo-1			A	198.19.20.8
-echo-2			A	198.19.20.9
+echo-tower		A	198.19.20.8
+echo-bedroom		A	198.19.20.9
 tokitae			A	198.19.20.10
 tplink-squid		A	198.19.20.11
 tplink-tube		A	198.19.20.12
 hue-bridge		A	198.19.20.13
-echo-3			A	198.19.20.14
+echo-livingroom		A	198.19.20.14
+echo-bathroom		A	198.19.20.15
+tplink-fish		A	198.19.20.16
+tplink-lamp		A	198.19.20.17
 
 ;;
 ;; Users
