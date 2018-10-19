@@ -3,9 +3,9 @@
 ; EugeneKay/dns
 ;
 $ORIGIN kashpureff.org.
-$TTL 1H
+$TTL 1000
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1532987258	1H	5M	1W	1H	)
+	1539977574	1000	100	1000000	1000	)
 
 
 ;;
@@ -163,6 +163,11 @@ status			CNAME	jeeves
 ;; Dynamically-Allocated
 hosts			NS	jeeves.kashpureff.org.
 
+;; Byron
+byron			A	45.33.37.41
+byron			AAAA	2600:3c01::f03c:91ff:fe1a:d803
+_ssh._tcp.byron		SRV	10	10	22	byron
+
 ;; Chelan
 chelan			A	198.19.20.50
 chelan			AAAA	2001:470:e9a4:20::5000
@@ -176,6 +181,10 @@ elwha			CNAME	elwha.hosts
 vpn.elwha		A	198.19.0.6
 vpn.elwha		AAAA	2600:3c01:e001:2900::6
 _ssh._tcp.elwha		SRV	10	10	22	elwha.hosts
+
+;; Frankie
+frankie			A	34.221.232.248
+_ssh._tcp.frankie	SRV	10	10	22	frankie
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
@@ -243,7 +252,6 @@ _ssh._tcp.wenatchee	SRV	10	10	22	wenatchee
 ipmi.wenatchee		A	198.19.20.21
 ipmi-wenatchee		CNAME	ipmi.wenatchee
 wenatchee-ipmi		CNAME	ipmi.wenatchee
-plex.wenatchee		AAAA	2001:470:e9a4:16::1000
 
 ;; Winode(Oliver's Rescue-Mode identity)
 winode			A	45.79.81.38
