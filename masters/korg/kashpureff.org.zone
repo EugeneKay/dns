@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1000
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1539977574	1000	100	1000000	1000	)
+	1556403587	1000	100	1000000	1000	)
 
 
 ;;
@@ -185,6 +185,11 @@ _ssh._tcp.elwha		SRV	10	10	22	elwha.hosts
 ;; Frankie
 frankie			A	34.221.232.248
 _ssh._tcp.frankie	SRV	10	10	22	frankie
+
+;; Game
+game			A	50.116.8.254
+game			AAAA	2600:3c01::f03c:91ff:fea3:0ecd
+games			CNAME	game
 
 ;; Hanntop
 hanntop			CNAME	hanntop.win
