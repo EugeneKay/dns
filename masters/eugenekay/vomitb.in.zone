@@ -37,12 +37,12 @@ _dns._udp		SRV	10	10	53	ns4.he.net.
 @                       TXT     "v=spf1 mx -all"
 
 ;; Web
-@			A 	173.230.156.191
-@			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
-www			A	173.230.156.191
-www			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
-*			A	173.230.156.191
-*			AAAA	2600:3c01::f03c:91ff:fe1f:7b72
+@			A 	167.99.165.203
+@			AAAA	2604:a880:2:d0::de6:d001
+www			A	167.99.165.203
+www			AAAA	2604:a880:2:d0::de6:d001
+*			A	167.99.165.203
+*			AAAA	2604:a880:2:d0::de6:d001
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
