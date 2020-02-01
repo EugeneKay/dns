@@ -12,4 +12,4 @@ These are the zonefiles used by EugeneKay's DNS. They are likely not of much use
 License
 -------
 
-All files contained in this repository are Copyright © 2014 by [Eugene E. Kashpureff Jr](mailto:eugene@kashpureff.org). License is granted under the WTFPL(version 2 or higher), and under the GNU GPL(version 3 or higher).
+All files contained in this repository are Copyright © 2014-2020 by [Eugene Evgenevich Kashpureff](mailto:eugene@kashpureff.org). License is granted under the WTFPL(version 2 or higher), and under the GNU GPL(version 3 or higher).
