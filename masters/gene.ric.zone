@@ -12,17 +12,17 @@
 
 ;; Settings
 $ORIGIN gene.ric.
-$TTL 1H
+$TTL 1000
 
 ;; Start-of-Authority
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1451863148	1H	5M	1W	1H	)
+	1580591031	1H	5M	1W	1H	)
 
 ;; Nameservers
-@			NS	ns1.linode.com.
 @			NS	ns2.he.net.
-@			NS	ns3.linode.com.
+@			NS	ns3.he.net.
 @			NS	ns4.he.net.
+@			NS	ns5.he.net.
 
 
 ;;

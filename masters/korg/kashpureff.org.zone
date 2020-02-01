@@ -5,7 +5,7 @@
 $ORIGIN kashpureff.org.
 $TTL 1000
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1556403587	1000	100	1000000	1000	)
+	1580591029	1000	100	1000000	1000	)
 
 
 ;;
@@ -13,87 +13,29 @@ $TTL 1000
 ;;
 
 ;; Authoritative
-@			NS	ns1.linode.com.
 @			NS	ns2.he.net.
-@			NS	ns3.linode.com.
+@			NS	ns3.he.net.
 @			NS	ns4.he.net.
+@			NS	ns5.he.net.
 
 ;; Delegations
 
 ; Dynamic
 dynamic			NS	jeeves.kashpureff.org.
 
-; Active Directory-integrated
-DomainDnsZones		NS	ns1.linode.com.
-DomainDnsZones		NS	ns2.he.net.
-DomainDnsZones		NS	ns3.linode.com.
-DomainDnsZones		NS	ns4.he.net.
-ForestDnsZones		NS	ns1.linode.com.
-ForestDnsZones		NS	ns2.he.net.
-ForestDnsZones		NS	ns3.linode.com.
-ForestDnsZones		NS	ns4.he.net.
-win			NS	ns1.linode.com.
-win			NS	ns2.he.net.
-win			NS	ns3.linode.com.
-win			NS	ns4.he.net.
-_msdcs			NS	ns1.linode.com.
-_msdcs			NS	ns2.he.net.
-_msdcs			NS	ns3.linode.com.
-_msdcs			NS	ns4.he.net.
-_sites			NS	ns1.linode.com.
-_sites			NS	ns2.he.net.
-_sites			NS	ns3.linode.com.
-_sites			NS	ns4.he.net.
-_gc._tcp		NS	ns1.linode.com.
-_gc._tcp		NS	ns2.he.net.
-_gc._tcp		NS	ns3.linode.com.
-_gc._tcp		NS	ns4.he.net.
-_kerberos._tcp		NS	ns1.linode.com.
-_kerberos._tcp		NS	ns2.he.net.
-_kerberos._tcp		NS	ns3.linode.com.
-_kerberos._tcp		NS	ns4.he.net.
-_kerberos._udp		NS	ns1.linode.com.
-_kerberos._udp		NS	ns2.he.net.
-_kerberos._udp		NS	ns3.linode.com.
-_kerberos._udp		NS	ns4.he.net.
-_kpasswd._tcp		NS	ns1.linode.com.
-_kpasswd._tcp		NS	ns2.he.net.
-_kpasswd._tcp		NS	ns3.linode.com.
-_kpasswd._tcp		NS	ns4.he.net.
-_kpasswd._udp		NS	ns1.linode.com.
-_kpasswd._udp		NS	ns2.he.net.
-_kpasswd._udp		NS	ns3.linode.com.
-_kpasswd._udp		NS	ns4.he.net.
-_ldap._tcp		NS	ns1.linode.com.
-_ldap._tcp		NS	ns2.he.net.
-_ldap._tcp		NS	ns3.linode.com.
-_ldap._tcp		NS	ns4.he.net.
-
-
 ;;
 ;; Services
 ;;
 
 ;; DNS
-_dns._tcp		SRV	10	10	53	ns1.linode.com.
 _dns._tcp		SRV	10	10	53	ns2.he.net.
-_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.he.net.
 _dns._tcp		SRV	10	10	53	ns4.he.net.
-_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.he.net.
 _dns._udp		SRV	10	10	53	ns2.he.net.
-_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns3.he.net.
 _dns._udp		SRV	10	10	53	ns4.he.net.
-
-;; LDAP(AD SRVs should be used where possible)
-; Oliver
-;ldap			A	198.19.0.5
-;ldap			AAAA	2600:3c01:e001:2900::5
-; Tokitae
-ldap			A	198.19.20.10
-ldap			AAAA	2001:470:e9a4:20::3000
-; Yakima
-;ldap			A	198.19.20.40
-;ldap			AAAA	2001:470:e9a4:20::4000
+_dns._udp		SRV	10	10	53	ns5.he.net.
 
 ;; Mail
 @			MX	10 aspmx.l.google.com.
@@ -128,15 +70,10 @@ _jabber._tcp		SRV	20	10	5269	xmpp-server2.l.google.com.
 _jabber._tcp		SRV	20	10	5269	xmpp-server3.l.google.com.
 _jabber._tcp		SRV	20	10	5269	xmpp-server4.l.google.com.
 
-;; VPN
-vpn			A	173.230.156.35
-vpn			AAAA	2600:3c01::14:7001
-
 ;; Web
-@			A	173.230.158.85
-@			AAAA	2600:3c01::14:7116
-www			A	173.230.158.85
-www			AAAA	2600:3c01::14:7116
+@			A	34.220.82.18
+web			A	34.220.82.18
+www			A	34.220.82.18
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
@@ -153,55 +90,12 @@ contacts		CNAME	www
 ; Externally-hosted
 blog			CNAME	ghs.googlehosted.com.
 
-; Status
-status			CNAME	jeeves
-
 ;;
 ;; Hosts
 ;;
 
 ;; Dynamically-Allocated
 hosts			NS	jeeves.kashpureff.org.
-
-;; Byron
-byron			A	45.33.37.41
-byron			AAAA	2600:3c01::f03c:91ff:fe1a:d803
-_ssh._tcp.byron		SRV	10	10	22	byron
-
-;; Chelan
-chelan			A	198.19.20.50
-chelan			AAAA	2001:470:e9a4:20::5000
-_rdp._tcp.chelan	SRV	10	10	3389	chelan
-
-;; Chetzemoka
-chetzemoka		CNAME	kennewick
-
-;; Elwha
-elwha			CNAME	elwha.hosts
-vpn.elwha		A	198.19.0.6
-vpn.elwha		AAAA	2600:3c01:e001:2900::6
-_ssh._tcp.elwha		SRV	10	10	22	elwha.hosts
-
-;; Frankie
-frankie			A	34.221.232.248
-_ssh._tcp.frankie	SRV	10	10	22	frankie
-
-;; Game
-game			A	50.116.8.254
-game			AAAA	2600:3c01::f03c:91ff:fea3:0ecd
-games			CNAME	game
-
-;; Hanntop
-hanntop			CNAME	hanntop.win
-
-;; Honeydew
-honeydew		CNAME	honeydew.win
-
-;; Hyak
-hyak			CNAME	hyak.dynamic
-vpn.hyak		A	198.19.0.4
-vpn.hyak		AAAA	2600:3c01:e001:2900::4
-_ssh._tcp.hyak		SRV	10	10	22	hyak
 
 ;; Jack
 jack			A	173.230.158.85
@@ -212,43 +106,11 @@ _ssh._tcp.jack		SRV	10	10	22	jack
 
 ;; Jeeves
 jeeves			A	173.230.156.35
-;jeeves			AAAA	2600:3c01::14:7000
-;jeeves			AAAA	2600:3c01::14:70ff
 jeeves			AAAA	2600:3c01::f03c:91ff:fe50:ebf0
 linode.jeeves		A	192.168.133.207
 vpn.jeeves		A	198.19.0.1
 vpn.jeeves		AAAA	2600:3c01:e001:2900::1
 _ssh._tcp.jeeves	SRV	10	10	22	jeeves
-
-;; Kennewick
-kennewick		A	198.19.20.30
-kennewick		AAAA	2001:470:e9a4:20::2000
-_rdp._tcp.kennewick	SRV	10	10	3389	kennewick
-
-;; Kitsap
-kitsap			A	10.13.0.80
-_ssh._tcp.kitsap	SRV	10	10	22	kitsap
-
-;; Oliver
-oliver			A	198.19.0.5
-oliver			AAAA	2600:3c01:e001:2900::5
-_rdp._tcp.oliver	SRV	10	10	3389	oliver
-
-;; Salish
-salish			CNAME	salish.win
-
-;; Sealth
-sealth			CNAME	sealth.win
-
-;; Terry
-terry			A	198.19.16.40
-terry			AAAA	2001:470:e9a4:16::3000
-_ssh._tcp.terry		SRV	10	10	22	terry
-
-;; Tokitae
-tokitae			A	198.19.20.10
-tokitae			AAAA	2001:470:e9a4:20::3000
-_rdp._tcp.tokitae	SRV	10	10	22	tokitae
 
 ;; Wenatchee
 wenatchee		AAAA	2001:470:e9a4:20::1000
@@ -258,38 +120,63 @@ ipmi.wenatchee		A	198.19.20.21
 ipmi-wenatchee		CNAME	ipmi.wenatchee
 wenatchee-ipmi		CNAME	ipmi.wenatchee
 
-;; Winode(Oliver's Rescue-Mode identity)
-winode			A	45.79.81.38
-_ssh._tcp.winode	SRV	10	10	22	winode
-
-;; Yakima
-yakima			A	198.19.20.40
-yakima			AAAA	2001:470:e9a4:20::4000
-ipmi.yakima		A	198.19.20.41
-ipmi-yakima		CNAME	ipmi.yakima
-yakima-ipmi		CNAME	ipmi.yakima
-
 ;;
 ;; Sites
 ;;
 
-;; Vashon
-$ORIGIN vashon.kashpureff.org.
-gateway			A	198.19.20.1
-switch-1		A	198.19.20.4
-wifi-1			A	198.19.20.5
-printer			A	198.19.20.6
-xboxone			A	198.19.20.7
-echo-tower		A	198.19.20.8
-echo-bedroom		A	198.19.20.9
-tokitae			A	198.19.20.10
-tplink-squid		A	198.19.20.11
-tplink-tube		A	198.19.20.12
-hue-bridge		A	198.19.20.13
-echo-livingroom		A	198.19.20.14
-echo-bathroom		A	198.19.20.15
-tplink-fish		A	198.19.20.16
-tplink-lamp		A	198.19.20.17
+;; Fionia: 198.19.16.0/20
+$ORIGIN fionia.kashpureff.org.
+cloudkey		CNAME	cloudkey.mgmt
+unifi			CNAME	cloudkey.mgmt
+firewall		CNAME	sg1100.mgmt
+sg1100			CNAME	sg1100.mgmt
+switch-1		CNAME	switch-1.mgmt
+wifi-1			CNAME	wifi-1.mgmt
+wifi-2			CNAME	wifi-2.mgmt
+
+$ORIGIN mgmt.fionia.kashpureff.org.
+; Management 198.19.16.0/22
+network			A	198.19.16.0
+broadcast		A	198.19.19.255
+gateway			A	198.19.16.1
+sg1100			A	198.19.16.2
+cloudkey		A	198.19.17.0
+unifi			CNAME	cloudkey
+switch-1		A	198.19.17.1
+wifi-1			A	198.19.17.2
+wifi-2			A	198.19.17.3
+
+$ORIGIN secure.fionia.kashpuref.org.
+; Secure VLAN 20 198.19.20.0/22
+network			A	198.19.20.0
+broadcast		A	198.19.23.255
+
+$ORIGIN devices.fionia.kashpureff.org.
+; Devices VLAN 24 198.19.24.0/22
+network			A	198.19.24.0
+broadcast		A	198.19.27.255
+gateway			A	198.19.24.1
+sg1100			A	198.19.24.2
+echo-kitchen		A	198.19.25.0
+echo-bathrooms		A	198.19.25.1
+echo-living		A	198.19.25.2
+rainbow-kitchen		A	198.19.25.3
+rainbow-bedroom		A	198.19.25.4
+echo-bedroom		A	198.19.25.6
+echo-hallway		A	198.19.25.7
+raspi-01		A	198.19.25.8
+raspi-02		A	198.19.25.9
+;raspi-03		A	198.19.25.10
+;raspi-04		A	198.19.25.11
+raspi-05		A	198.19.25.12
+raspi-06		A	198.19.25.13
+
+$ORIGIN guest.fionia.kashpureff.org.
+; Guest VLAN 28 198.19.28.0/22
+network			A	198.19.28.0
+broadcast		A	198.19.31.255
+gateway			A	198.19.28.1
+sg1100			A	198.19.28.2
 
 ;;
 ;; Users
@@ -297,19 +184,14 @@ tplink-lamp		A	198.19.20.17
 
 ;; Eugene
 $ORIGIN eugene.kashpureff.org.
-@			A	45.33.44.207
-@			AAAA	2600:3c01::f03c:91ff:fecc:ccec
+@			A	52.24.64.241
 @			MX	10	jack.kashpureff.org.
 @			TXT	"v=spf1 a:jack.kashpureff.org -all"
-manta			A	198.19.21.4
-iphone			A	198.19.21.6
-redband			A	198.19.21.7
 
 ;; Hannah
 $ORIGIN hannah.kashpureff.org.
 @			MX	10	jack.kashpureff.org.
 @			TXT	"v=spf1 a:jack.kashpureff.org -all"
-hanndroid		A	198.19.21.5
 
 ;; Systems
 $ORIGIN systems.kashpureff.org.

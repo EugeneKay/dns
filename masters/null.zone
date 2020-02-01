@@ -5,7 +5,7 @@
 ; Null zone
 ;
 
-$TTL 1H
+$TTL 1000
 
 ;; Start-of-Authority
 @	SOA	hyak.kashpureff.org.	eugene.kashpureff.org.	(

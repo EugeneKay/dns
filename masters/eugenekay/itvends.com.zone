@@ -5,18 +5,18 @@
 ; It Vends
 ;
 $ORIGIN itvends.com.
-$TTL 1H
+$TTL 1000
 @	SOA	jeeves.kashpureff.org.	eugene.kashpureff.org.	(
-	1556403678	1H	5M	1W	1H	)
+	1580591025	1H	5M	1W	1H	)
 ;;
 ;; Nameservers
 ;;
 
 ;; Authoritative
-@			NS	ns1.linode.com.
 @			NS	ns2.he.net.
-@			NS	ns3.linode.com.
+@			NS	ns3.he.net.
 @			NS	ns4.he.net.
+@			NS	ns5.he.net.
 
 ;;
 ;; Services
@@ -27,54 +27,27 @@ itvends.com.	IN	CAA	0 issue "letsencrypt.org"
 itvends.com.	IN	CAA	0 iodef "mailto:systems@kashpureff.org"
 
 ;; DNS
-_dns._tcp		SRV	10	10	53	ns1.linode.com.
 _dns._tcp		SRV	10	10	53	ns2.he.net.
-_dns._tcp		SRV	10	10	53	ns3.linode.com.
+_dns._tcp		SRV	10	10	53	ns3.he.net.
 _dns._tcp		SRV	10	10	53	ns4.he.net.
-_dns._udp		SRV	10	10	53	ns1.linode.com.
+_dns._tcp		SRV	10	10	53	ns5.he.net.
 _dns._udp		SRV	10	10	53	ns2.he.net.
-_dns._udp		SRV	10	10	53	ns3.linode.com.
+_dns._udp		SRV	10	10	53	ns3.he.net.
 _dns._udp		SRV	10	10	53	ns4.he.net.
+_dns._udp		SRV	10	10	53	ns5.he.net.
 
-;; Games
-game			CNAME	game.kashpureff.org.
-games			CNAME	game.kashpureff.org.
+;; Git
+_github-challenge-itvends	TXT	"2b80601b20"
 
 ;; Mail
 @                       MX      10      jack.kashpureff.org.
 @                       TXT     "v=spf1 mx -all"
-
-;; Torrent Tracker
-tracker			A	173.230.158.85
+@			TXT	"google-site-verification=bj1EXWaN_tOj27kQSdGqKra7JpdONS85q-pqTaga_hI"
 
 ;; Web
-@			A	173.230.158.85
-@			AAAA	2600:3c01::14:7102
-www			A	173.230.158.85
-www			AAAA	2600:3c01::14:7102
+@			A	34.220.82.18
+www			A	34.220.82.18
 _http._tcp		SRV	10	10	80	www
 _https._tcp		SRV	10	10	443	www
 _http._tcp.www		SRV	10	10	80	www
 _https._tcp.www		SRV	10	10	443	www
-
-;; ZNC
-znc			A	173.230.158.85
-znc			AAAA	2600:3c01::14:7102
-_http._tcp.znc		SRV	10	10	80	znc
-_https._tcp.znc		SRV	10	10	443	znc
-_irc._tcp		SRV	10	10	6667	znc
-_irc._tcp		SRV	20	10	56667	znc
-_ircs._tcp		SRV	10	10	6697	znc
-_ircs._tcp		SRV	20	10	56697	znc
-_znc._tcp		SRV	10	10	6667	znc
-_znc._tcp		SRV	20	10	56667	znc
-_zncs._tcp		SRV	10	10	6697	znc
-_zncs._tcp		SRV	20	10	56697	znc
-_irc._tcp.znc		SRV	10	10	6667	znc
-_irc._tcp.znc		SRV	20	10	56667	znc
-_ircs._tcp.znc		SRV	10	10	6697	znc
-_ircs._tcp.znc		SRV	20	10	56697	znc
-_znc._tcp.znc		SRV	10	10	6667	znc
-_znc._tcp.znc		SRV	20	10	56667	znc
-_zncs._tcp.znc		SRV	10	10	6697	znc
-_zncs._tcp.znc		SRV	20	10	56697	znc
